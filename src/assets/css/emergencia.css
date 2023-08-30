@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color:  hsl(133, 41%, 31%);
+  --text-login:  hsl(133, 41%, 31%);
+  --bg-url: url(../img/bg-desktop-light.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-houver: rgba(135, 106, 106, 0.264);
+  --surface-menu: hsl(133, 41%, 31%);
+  --surface-menu-houver: hsl(133, 41%, 55%); 
+  --highlight-color: rgba(0, 0, 0, 0.1);
+  --switch-bg-url: url(../img/sun.svg);
+  --squares-color: hsl(132, 46%, 75%);
+}
+
+.light {
+  --text-color:  hsl(133, 41%, 31%);
+  --text-login:  hsl(132, 6%, 85%);
+  --bg-url: url(../img/bg-desktop-dark.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color:  rgba(255, 255, 255, 0.05);
+  --surface-color-houver:  rgba(199, 169, 169, 0.5);
+  --surface-menu: hsl(133, 41%, 55%);
+  --surface-menu-houver: hsl(132, 6%, 85%);
+  --highlight-color: rgba(255, 255, 255, 0.2);
+  --switch-bg-url: url(../img/moon-stars.svg);
+  --squares-color:  hsl(133, 41%, 31%);
+}
+
+body {
+  background: var(--bg-url) no-repeat top center/cover;
+}
+
+body * {
+  color: var(--text-color);
+}
+
+#container {
+  width: 100%;
+  max-width: 588px;
+  margin: 0px auto 0px;
+  padding: 0 24px;
+}
+
+/* Profile */
+#profile {
+  text-align: center;
+  padding: 24px;
+}
+
+#profile img {
+  width: 80px;
+}
+
+#profile p {
+  font-family: 'Boogaloo', cursive;
+  font-size: 32px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 8px;
+  color: var(--text-login);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 32px;
+  letter-spacing: 1px;
+  margin: 20px 0;
+  color: var(--text-login);
+}
+
+/* switch */
+#switch {
+  width: 64px;
+  position: relative;
+  margin: 4px auto;
+}
+
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: white var(--switch-bg-url) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+  animation: slide-back 0.2s;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
+}
+
+.light #switch button {
+  animation: slide-in 0.4s forwards;
+}
+
+#switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  --webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px;
+} 
+
+/*Menu Esquerdo*/
+#conteudo-esquerdo {
+  position: absolute;
+  /* background-color: blueviolet; */
+  display: flex;
+  width: 350px;
+  flex-flow: column wrap;
+  margin: 0px -450px 0px;
+}
+
+.iframe {
+  /* background-color: brown; */
+  width: 280px;
+  height: 240px;
+  margin: 50px auto 0px;
+}
+
+/*xxxxxxxxxxx*/
+form {
+  margin: 20px 0;
+  background-color: var(--bg-form) /*white*/;
+  padding: 30px 25px;
+  border-radius: 5px;
+}
+
+/* links */
+ul {
+  margin-top: -50px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0;
+}
+
+ul li a {
+  color: var(--text-login);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+  --wekit-backdrop-filter: blur(4px);
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+ul li a:hover {
+  color: var(--surface-menu-houver);
+  background: var(--surface-color-houver);
+  border: 1.5px solid var(--text-color);
+}
+
+.eye-outline {
+  font-size: 15px;
+  color: hsl(133, 41%, 31%);
+  position: fixed;
+  margin: -22px 190px;
+  cursor: pointer;
+}
+
+#input1 {
+    position: absolute;
+    width: 200px;
+    height: 80px;
+    cursor: pointer;
+    background-color: hsl(50, 100%, 50%);
+    color: var(--text-color) /*hsl(266, 39%, 58%)*/;
+    border: 0;
+    border-radius: 20px;
+    transition: 0.3s;
+    justify-content: center;
+}
+
+#input1:hover {
+    background-color: hsl(133, 41%, 31%);
+    color: hsl(50, 100%, 50%);
+    border: 1px solid hsl(134, 33%, 63%);
+    transform: scale(1.1);
+}
+
+#input2 {
+    position: absolute;
+    width: 200px;
+    height: 80px;
+    cursor: pointer;
+    background-color: hsl(50, 100%, 50%);
+    color:var(--text-color) /*hsl(266, 39%, 58%)*/;
+    border: 0;
+    border-radius: 20px;
+    transition: 0.3s;
+    justify-content: center;
+}
+
+#input2:hover {
+    background-color: hsl(133, 41%, 31%);
+    color: hsl(50, 100%, 50%);
+    border: 1px solid hsl(134, 33%, 63%);
+    transform: scale(1.1);
+}
+
+.help1 {
+  font-size: 12pt;
+  text-align: center;
+  flex-wrap: wrap;
+  margin: 10px 0px;
+}
+
+.sus {
+  font-size: 12pt;
+  flex-wrap: wrap;
+  margin: -6px 290px;
+}
+
+.direitos-humanos {
+  font-size: 15px;
+  text-align: center;
+  flex-wrap: wrap;
+  margin: 80px 0px;
+}
+
+.serviço-proteção {
+  font-size: 15px;
+  text-align: center;
+  flex-wrap: wrap;
+  margin: 65px 290px;
+}
+
+/* animation */
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+/* squares */
+body {
+  overflow: hidden;
+}
+
+.squares li {
+  width: 40px;
+  height: 40px;
+  background-color: var(--squares-color);
+  display: block;
+  position: absolute;
+  bottom: -40px;
+  animation: up 2s infinite alternate;
+  z-index:-1
+}
+
+@keyframes up {
+  from {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-800px) rotate(960deg);
+  }
+}   
+
+#conteudo-direito {
+  position: absolute;
+  /* background-color: blueviolet; */
+  display: flex;
+  width: 350px;
+  flex-flow: column wrap;
+  margin: -300px 1050px 0px;
+}
+
+.hora {
+    width: 353px;
+    height: 237px;
+    /* margin: -800px 450px 0px; */
+}
+
+footer {
+  font-size: 15px;
+  margin: 100px auto 0px;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p{
+  color: var(--text-login);
+}

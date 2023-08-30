@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="MinhaSaude" />
+    <title>MinhaSaúde</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Fraunces:wght@700&display=swap" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="profile">
+        <img src="./assets/img/Logo-light.png" alt="Logo - MinhaSaúde" />
+        <p>MinhaSáude</p>
+      </div>
+      <section class="form-section">
+        <h1>Login</h1>
+        <div class="form-wrapper">
+          <div id="switch" onclick="toggleMode()">
+            <button></button>
+            <span></span>
+          </div>
+        </div>
+        <form>
+          <div class="input-block">
+            <label for="login-usuario">Usuário</label>
+            <input type="usuario" id="login-usuario" />
+          </div>
+          <div class="input-block">
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" />
+
+            <ion-icon
+              class="eye-outline"
+              id="btn-senha"
+              name="eye-outline"
+              onclick="mostrarSenha()"
+              aria-hidden="true"
+            ></ion-icon>
+          </div>
+          <button type="submit" class="btn-login" onclick="logar">Login</button>
+        </form>
+      </section>
+    </div>
+    <footer>
+      <p>&copy; 2023 Sistema de Retaguarda. Todos os direitos reservados.</p>
+    </footer>
+
+    <ul class="squares"></ul>
+
+    <script src="../src/assets/js/script.js"></script>
+
+    <script>
+      function logar() {
+        var login = document.getElementById("login-usuario").value
+        var senha = document.getElementById("login-password").value
+
+        if (login === "admin" && senha === "admin") {
+          alert("Sucesso")
+        }
+      }
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
