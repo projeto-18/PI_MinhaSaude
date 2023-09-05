@@ -40,7 +40,7 @@ btnLogin.addEventListener("click", (event) => {
     })
   } else {
     form.classList.add("form-hide")
-    window.location.href = "../src/assets/html/principal.html"
+    window.location.href = "../src/html/principal.html"
   }
 })
 

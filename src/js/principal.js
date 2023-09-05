@@ -7,10 +7,10 @@ function toggleMode() {
 
   //Substituir a img
   if (html.classList.contains("light")) {
-    img.setAttribute("src", "../img/Logo-dark.png")
+    img.setAttribute("src", "../assets/img/Logo-dark.png")
     img.setAttribute("alt", "Logo - MinhaSaúde Light")
   } else {
-    img.setAttribute("src", "../img/Logo-light.png")
+    img.setAttribute("src", "../assets/img/Logo-light.png")
     img.setAttribute("alt", "Logo - MinhaSaúde Dark")
   }
 }
