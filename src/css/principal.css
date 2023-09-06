@@ -5,31 +5,31 @@
 }
 
 :root {
-  --text-color:  hsl(133, 41%, 31%);
-  --text-login:  hsl(133, 41%, 31%);
+  --text-color: hsl(133, 41%, 31%);
+  --text-login: hsl(133, 41%, 31%);
   --bg-url: url(../assets/img/bg-desktop-light.jpg);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-houver: rgba(135, 106, 106, 0.264);
   --surface-menu: hsl(133, 41%, 31%);
-  --surface-menu-houver: hsl(133, 41%, 55%); 
+  --surface-menu-houver: hsl(133, 41%, 55%);
   --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-bg-url: url(../assets/img/sun.svg);
   --squares-color: hsl(132, 46%, 75%);
 }
 
 .light {
-  --text-color:  hsl(133, 41%, 31%);
-  --text-login:  hsl(132, 6%, 85%);
+  --text-color: hsl(133, 41%, 31%);
+  --text-login: hsl(132, 6%, 85%);
   --bg-url: url(../assets/img/bg-desktop-dark.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
-  --surface-color:  rgba(255, 255, 255, 0.05);
-  --surface-color-houver:  rgba(199, 169, 169, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --surface-color-houver: rgba(199, 169, 169, 0.5);
   --surface-menu: hsl(133, 41%, 55%);
   --surface-menu-houver: hsl(132, 6%, 85%);
   --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url(../assets/img/moon-stars.svg);
-  --squares-color:  hsl(133, 41%, 31%);
+  --squares-color: hsl(133, 41%, 31%);
 }
 
 body {
@@ -58,7 +58,7 @@ body * {
 }
 
 #profile p {
-  font-family: 'Boogaloo', cursive;
+  font-family: "Boogaloo", cursive;
   font-size: 32px;
   letter-spacing: 1px;
   font-weight: 700;
@@ -166,16 +166,28 @@ ul li a:hover {
   border: 1.5px solid var(--text-color);
 }
 
+#anjos {
+  font-size: 32px;
+  background-color: hsl(0, 96%, 80%);
+  color: var(--text-color);
+}
+
+#anjos:hover {
+  background-color: hsla(0, 42%, 42%, 0.5);
+  color: hsl(0, 0%, 80%);
+  font-weight: bold;
+}
+
 #emergencia {
   font-size: 32px;
-    background-color: hsl(0, 100%, 50%);
-    color: hsl(0, 0%, 80%);
+  background-color: hsl(0, 100%, 50%);
+  color: hsl(0, 0%, 80%);
 }
 
 #emergencia:hover {
-    background-color: hsla(0, 100%, 50%, 0.5);
-    color: hsl(0, 0%, 80%);
-    font-weight: bold;
+  background-color: hsla(0, 100%, 50%, 0.5);
+  color: hsl(0, 0%, 80%);
+  font-weight: bold;
 }
 
 /* animation */
@@ -210,7 +222,7 @@ body {
   position: absolute;
   bottom: -40px;
   animation: up 2s infinite alternate;
-  z-index:-1
+  z-index: -1;
 }
 
 @keyframes up {
@@ -235,26 +247,19 @@ body {
 }
 
 .hora {
-    width: 353px;
-    height: 237px;
-    /* margin: -800px 450px 0px; */
+  width: 353px;
+  height: 237px;
+  /* margin: -800px 450px 0px; */
 }
 footer {
   font-size: 15px;
-  margin: 30px auto 0px;
+  margin: -50px auto 0px;
   padding: 10px;
   text-align: center;
 }
 
-footer p{
+footer p {
   color: var(--text-login);
-}
-
-#container-footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
 }
 
 #navegacao {
@@ -262,11 +267,7 @@ footer p{
   height: 20pt;
 }
 
-.li-footer {
-  list-style: none;
-}
-
-.btn-sair{
+.btn-sair {
   background: hsl(46.3, 100%, 91%);
   border: none;
   cursor: pointer;
@@ -274,8 +275,8 @@ footer p{
 
 @media only screen and (max-width: 923px) {
   #navegacao {
-      padding: 0px 60px 0px 60px;
-      height: 20pt;
+    padding: 0px 40px 0px 40px;
+    height: 10pt;
   }
 }
 
@@ -283,15 +284,15 @@ footer p{
 #social-links {
   display: flex;
   justify-content: center;
-  padding: 24px 0;
-  font-size: 24px;
+  padding: 12px 0;
+  font-size: 16px;
 }
 
 #social-links a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px;
+  padding: 12px;
   transition: background 0.2;
   border-radius: 50%;
 }
