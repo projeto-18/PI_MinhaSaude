@@ -265,21 +265,15 @@ footer p {
 }
 
 #navegacao {
-  padding: 0px 90px 0px 90px;
+  padding: 0px 50px 0px 50px;
   height: 20pt;
 }
 
 .btn-sair {
+  background-image: var(--footer-icon);
   background: hsl(46.3, 100%, 91%);
   border: none;
   cursor: pointer;
-}
-
-@media only screen and (max-width: 923px) {
-  #navegacao {
-    padding: 0px 40px 0px 40px;
-    height: 10pt;
-  }
 }
 
 /* social links */
@@ -300,4 +294,15 @@ footer p {
 }
 #social-links a:hover {
   background: var(--highlight-color);
+}
+
+@media only screen and (max-width: 923px) {
+  #navegacao {
+    padding: 0px 40px 0px 40px;
+    height: 10pt;
+  }
+}
+
+.home {
+  background: var(--footer-icon) no-repeat;
 }

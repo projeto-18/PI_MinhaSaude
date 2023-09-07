@@ -16,6 +16,7 @@
   --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-bg-url: url(../assets/img/sun.svg);
   --squares-color: hsl(132, 46%, 75%);
+  --footer-icon: url(../assets/img/footer/home.png)
 }
 
 .light {
@@ -30,6 +31,7 @@
   --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url(../assets/img/moon-stars.svg);
   --squares-color:  hsl(133, 41%, 31%);
+  --footer-icon: url(../assets/img/footer/home_dark.png)
 }
 
 body {
@@ -342,7 +344,7 @@ footer p{
 }
 
 #navegacao {
-  padding: 0px 90px 0px 90px;
+  padding: 0px 50px 0px 50px;
   height: 20pt;
 }
 
