@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="responsive.css" media="screen and (max-width: 768px)" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Fraunces:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="print.css" media="print">
   </head>
   <body>
@@ -57,16 +59,13 @@
           ></iframe>
         </div>
         <div>
-          <h2>
-            As melhores tecnologias em programação, direto ao ponto e do jeito
-            certo.
-          </h2>
-          <p>
-            No meio de tanta informação e da quantidade de ferramentas que
-            surgem todos os dias, você precisa de alguém que te leve na direção
-            certa.
-          </p>
-          <a href="#" class="button">Quero embarcar neste foguete!</a>
+          <h2>Menu</h2>
+          <div class="form-wrapper">
+            <div id="switch" onclick="toggleMode()">
+                <button></button>
+                <span></span>
+            </div>
+        </div>
         </div>
         <div class="alarme">
           <iframe
@@ -172,8 +171,8 @@
       </div>
     </div>
 
+    <ul class="squares"></ul>
     <script src="scripts.js"></script>
     <script src="menu.js"></script>
-    <script src="../src/js/script.js"></script>
   </body>
 </html>

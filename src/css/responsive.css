@@ -11,9 +11,12 @@ html {
         text-align: center;
     }
 
-    .hero .container img {
-        order: -1;
+    #conteudo-esquerdo {
+        order: 0;
     }
+    /*.hero .container img {
+        order: -1;
+    }*/
 
     .form-group {
         display: block;
