@@ -1,4 +1,4 @@
-* {
+/** {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -21,10 +21,25 @@
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
   --squares-color: hsl(133, 41%, 31%);
+}*/
+
+/*html {
+  *//* a cada 1rem será considera 10px */
+ /* font-size: 62.5%;
 }
+
+html,
+body {
+  height: 100vh;
+  font-family: "Source Sans Pro";
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  font-size: 1.6rem;
 }
 
 header {
@@ -45,7 +60,7 @@ header {
     padding: 0 24px;
   }
 
-/* Profile */
+/* Profile 
 #profile {
   text-align: center;
   padding: 24px;
@@ -63,9 +78,9 @@ header {
   line-height: 24px;
   margin-top: 8px;
   color: var(--text-login);
-}
+}*/
 
-/* switch */
+/* switch 
 #switch {
   width: 64px;
   position: relative;
@@ -102,7 +117,7 @@ header {
   border: 1px solid var(--stroke-color);
   --webkit-backdrop-filter: blur(4px);
   border-radius: 9999px;
-}
+}*/
 
 /* squares */
 body {

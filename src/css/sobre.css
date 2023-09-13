@@ -9,31 +9,31 @@
   --text-color: hsl(133, 41%, 31%);
   --text-login: hsl(133, 41%, 31%);
   --bg-menu: hsl(133, 41%, 31%);
-  --br-menu-hover:hsl(133, 41%, 55%);
-  --bg-url: url(./assets/img/bg-desktop-light.jpg);
+  --bg-menu-hover: hsl(133, 41%, 55%);
+  --bg-url: url(../assets/img/bg-desktop-light.jpg);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-houver: rgba(135, 106, 106, 0.264);
   --surface-menu: hsl(133, 41%, 31%);
   --surface-menu-houver: hsl(133, 41%, 55%);
   --highlight-color: rgba(0, 0, 0, 0.1);
-  --switch-bg-url: url(./assets/img/sun.svg);
+  --switch-bg-url: url(../assets/img/sun.svg);
   --squares-color: hsl(132, 46%, 75%);
 }
 
 .light {
   --text-color: hsl(133, 41%, 31%);
   --text-login: hsl(132, 6%, 85%);
-  --bg-menu:hsl(133, 41%, 55%);
-  --br-menu-hover:hsl(133, 41%, 31%);
-  --bg-url: url(./assets/img/bg-desktop-dark.jpg);
+  --bg-menu: hsl(133, 41%, 55%);
+  --br-menu-hover: hsl(133, 41%, 31%);
+  --bg-url: url(../assets/img/bg-desktop-dark.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-houver: rgba(199, 169, 169, 0.5);
   --surface-menu: hsl(133, 41%, 55%);
   --surface-menu-houver: hsl(132, 6%, 85%);
   --highlight-color: rgba(255, 255, 255, 0.2);
-  --switch-bg-url: url(./assets/img/moon-stars.svg);
+  --switch-bg-url: url(../assets/img/moon-stars.svg);
   --squares-color: hsl(133, 41%, 31%);
 }
 
@@ -45,7 +45,7 @@ html {
 html,
 body {
   height: 100vh;
-  font-family: 'Boogaloo', cursive;
+  font-family: "Boogaloo", cursive;
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
 }
@@ -66,7 +66,7 @@ header .container {
 
   width: 90%;
   max-width: 980px;
-  
+
   margin: auto;
 }
 
@@ -88,13 +88,13 @@ header nav ul li a {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
-  font-size: 1.4rem; 
+  font-size: 1.4rem;
   padding: 2.4rem;
   transition: all 250ms linear 0s;
 }
 
 header nav ul li a:hover {
-  background: rgba(255,255,255, 0.15)
+  background: rgba(255, 255, 255, 0.15);
 }
 
 h1 {
@@ -105,19 +105,6 @@ h1 {
   padding: 1.5rem;
 }
 
-/* Profile
-#profile {
-  text-align: center;
-  padding: 24px;
-}
-
-#profile img {
-  width: 50px;
-  margin-left: 20px;
-  padding: 15px 0;
-} */
-
-/* switch */
 #switch {
   width: 64px;
   position: relative;
@@ -156,53 +143,71 @@ h1 {
   border-radius: 9999px;
 }
 
-/*=============== 
-Menu Esquerdo
-==================*/
-#mensage {
-  position: absolute;
+h2 {
+  font-size: 3rem;
+  letter-spacing: 0.1rem; /*espaçamento entre as letras*/
+  color: var(--text-login);
+  text-align: center;
+  padding: 1.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+  letter-spacing: 0.1rem; /*espaçamento entre as letras*/
+  color: var(--text-login);
+  text-align: center;
+  padding: 1.5rem;
+}
+
+h4 {
+  font-size: 3rem;
+  letter-spacing: 0.1rem; /*espaçamento entre as letras*/
+  color: var(--text-login);
+  text-align: center;
+  padding: 1.5rem;
+}
+
+#container-main p {
+  color: var(--text-login);
+  font-size: 2.8rem;
+  line-height: 3.2rem;
   display: flex;
-  width: 350px;
-  flex-flow: column wrap;
-  margin: 0px -250px 0px;
-}
+  align-items: center;
+  justify-content: space-between;
 
-.iframe {
-  width: 280px;
-  height: 240px;
-  margin: 0px auto 0px;
-}
-
-/*=============== 
-HERO
-==================*/
-section.hero {
-  margin: 80px 0;
-}
-
-section.hero .container {
   width: 90%;
   max-width: 980px;
 
   margin: auto;
-
-  display: flex;
 }
 
-section.hero p {
-  color: rgb(154, 142, 191);
-  font-size: 1.8rem;
-  line-height: 3.2rem;
-  margin: 10px 0px 0px;
+.voltar-menu {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  background-color:var(--bg-menu);
+  margin: 0px 780px 0px;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 150ms linear 0s;
+}
+
+.voltar-menu:hover {
+  font-size: 1.3rem;
+  background-color: var(--bg-menu-hover);
+  border: 1px solid hsl(0, 0%, 80%);
+  transform: scale(1.1);
 }
 
 footer {
-  font-size: 15px;
-  margin: 100px auto 0px;
+  font-size: 1.5rem;
+  margin: 0px auto 0px;
   padding: 10px;
   text-align: center;
 }
 
-footer p{
+footer p {
   color: var(--text-login);
 }

@@ -1,5 +1,91 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MinhaSaude">
+    <title>MinhaSaúde</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Fraunces:wght@700&display=swap" rel="stylesheet">
+    <link href="./css/animacao.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+    <body>
+        <header>
+            <div class="container">
+                <img src="./assets/img/Logo-light.png" alt="MinhaSaíde">      
+                <div class="menu-section">
+                    <div class="menu-toggle">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="three"></div>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">Starter</a>
+                            </li>
+                            <li>
+                                <a href="#">Bootcamp</a>
+                            </li>
+                            <li>
+                                <a href="./html/sobre.html">Sobre</a>
+                            </li>
+                            <li>
+                                <a href="#">Contato</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section class="form-section">
+            <h1>MinhaSaúde</h1>
+            <div class="form-wrapper">
+                <div id="switch" onclick="toggleMode()">
+                    <button></button>
+                    <span></span>
+                </div>
+            </div>
+        </section>
+        <section class="hero">
+            <div class="container">
+              <section id="mensage">
+                <nav class="superior">
+                    <div class="iframe">
+                        <div class="carrosel">
+                            <iframe src="./html/mensagens.html" frameborder="0" width="280" height="300" scolling = "no" style="border:none;" allowfullscreen="" loading="lazy" >
+                            </iframe>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+                <!--div>
+                    <h2>
+                        As melhores tecnologias em programação, direto ao ponto e do jeito
+          certo.
+                    </h2>
+                    <p>
+                        No meio de tanta informação e da quantidade de ferramentas que
+          surgem todos os dias, você precisa de alguém que te leve na direção
+          certa.
+                    </p>
+                    <a href="#" class="button">Quero embarcar neste foguete!</a>
+                </div>
+                <img src="./images/melhores-tecnologias.svg" alt=""-->
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2023 Sistema de auto ajuda MinhaSaúde. Todos os direitos reservados.</p>
+        </footer>
+        <ul class="squares"></ul>
+        <script src="./style.js"></script>
+    </body>
+</html>
+<!--
+<!DOCTYPE html>
+<html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,60 +97,52 @@
         <link href="./css/animacao.css" rel="stylesheet" type="text/css">
         <link href="style.css" rel="stylesheet" type="text/css">
     </head>
-<body>
-    <header>
-        <div class="container">
-          <div id="profile">
-            <img src="./assets/img/Logo-light.png" alt="Logo - MinhaSaúde" />
-          </div>
-          <div class="menu-section">
-            <div class="menu-toggle">
-              <div class="one"></div>
-              <div class="two"></div>
-              <div class="three"></div>
+    <body>
+        <header>
+            <div class="container">
+                <img src="assets/img/Logo-light.png" alt="Logo - MinhaSaúde">
+                <div class="menu-section">
+                    <div class="menu-toggle">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="three"></div>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">Starter</a>
+                            </li>
+                            <li>
+                                <a href="#">Bootcamp</a>
+                            </li>
+                            <li>
+                                <a href="#">Comunidade</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <nav>
-              <ul>
-                <li>
-                  <a href="#">Starter</a>
-                </li>
-                <li>
-                  <a href="#">Bootcamp</a>
-                </li>
-                <li>
-                  <a href="#">Comunidade</a>
-                </li>
-                <li>
-                  <a href="#">Blog</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </header>
-      <section class="form-section">
-        <h1>Menu</h1>
-        <div class="form-wrapper">
-            <div id="switch" onclick="toggleMode()">
-                <button></button>
-                <span></span>
+        </header>
+        <section class="form-section">
+            <h1>Menu</h1>
+            <div class="form-wrapper">
+                <div id="switch" onclick="toggleMode()">
+                    <button></button>
+                    <span></span>
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="hero">
-
-    </section>
-
-    <main>
-      <section class="cards">
-        
-      </section>
-    </main>
-
-    <footer>
-      <p>&copy; 2023 Sistema de auto ajuda MinhaSaúde. Todos os direitos reservados.</p>
-    </footer>
-      <ul class="squares"></ul>
-      <script src="./js/animacao.js"></script>
-</body>
-</html>
+        </section>
+        <section class="hero"></section>
+        <main>
+            <section class="cards"></section>
+        </main>
+        <footer>
+            <p>&copy; 2023 Sistema de auto ajuda MinhaSaúde. Todos os direitos reservados.</p>
+        </footer>
+        <ul class="squares"></ul>
+        <script src="./js/animacao.js"></script>
+    </body>
+</html-->
