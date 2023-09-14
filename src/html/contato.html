@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MinhaSaude">
+    <title>MinhaSaúde</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Fraunces:wght@700&display=swap" rel="stylesheet">
+    <link href="../css/animacao.css" rel="stylesheet" type="text/css">
+    <link href="../css/contato.css" rel="stylesheet" type="text/css">
+</head>
+    <body>
+        <header>
+            <div class="container">
+                <img src="../assets/img/Logo-light.png" alt="MinhaSaíde">      
+                <div class="menu-section">
+                    <div class="menu-toggle">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="three"></div>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">Starter</a>
+                            </li>
+                            <li>
+                                <a href="#">Bootcamp</a>
+                            </li>
+                            <li>
+                                <a href="sobre.html">Sobre</a>
+                            </li>
+                            <li>
+                                <a href="contato.html">Contato</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section class="form-section">
+            <h1>MinhaSaúde</h1>
+            <div class="form-wrapper">
+                <div id="switch" onclick="toggleMode()">
+                    <button></button>
+                    <span></span>
+                </div>
+            </div>
+        </section>
+        <form action="https://formsubmit.co/pj.minhasaude@gmail.com" method="post" class="form">
+            <label for="name">Nome: </label>
+            <input type="text" name="nome" id="name" required />
+            <label for="email">e-mail: </label>
+            <input type="email" name="email" id="email" required />
+            <label for="message">Mensagem</label>
+            <textarea name="menssagem" id="message" cols="30" rows="10"></textarea>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
+            <button type="submit">Enviar</button>
+        </form>
+    <footer>
+        <p>&copy; 2023 Sistema de auto ajuda MinhaSaúde. Todos os direitos reservados.</p>
+    </footer>
+    <ul class="squares"></ul>
+    <script src="../js/animacao.js"></script>
+</body>
+</html>

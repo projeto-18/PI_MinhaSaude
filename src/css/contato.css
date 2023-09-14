@@ -97,6 +97,44 @@ header nav ul li a:hover {
   background: rgba(255, 255, 255, 0.15);
 }
 
+#switch {
+    width: 64px;
+    position: relative;
+    margin: 4px auto;
+  }
+  
+  #switch button {
+    width: 32px;
+    height: 32px;
+    background: white var(--switch-bg-url) no-repeat center;
+    border: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+    animation: slide-back 0.2s;
+  }
+  
+  #switch button:hover {
+    outline: 8px solid var(--highlight-color);
+  }
+  
+  .light #switch button {
+    animation: slide-in 0.4s forwards;
+  }
+  
+  #switch span {
+    display: block;
+    width: 64px;
+    height: 24px;
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    --webkit-backdrop-filter: blur(4px);
+    border-radius: 9999px;
+  }
+
 h1 {
   font-size: 5rem;
   letter-spacing: 0.1rem; /*espaçamento entre as letras*/
@@ -105,111 +143,80 @@ h1 {
   padding: 1.5rem;
 }
 
-#switch {
-  width: 64px;
-  position: relative;
-  margin: 4px auto;
-}
-
-#switch button {
-  width: 32px;
-  height: 32px;
-  background: white var(--switch-bg-url) no-repeat center;
-  border: 0;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  z-index: 1;
-  transform: translateY(-50%);
-  animation: slide-back 0.2s;
-}
-
-#switch button:hover {
-  outline: 8px solid var(--highlight-color);
-}
-
-.light #switch button {
-  animation: slide-in 0.4s forwards;
-}
-
-#switch span {
-  display: block;
-  width: 64px;
-  height: 24px;
-  background: var(--surface-color);
-  border: 1px solid var(--stroke-color);
-  --webkit-backdrop-filter: blur(4px);
-  border-radius: 9999px;
-}
-
-h2 {
-  font-size: 3rem;
-  letter-spacing: 0.1rem; /*espaçamento entre as letras*/
-  color: var(--text-login);
-  text-align: center;
-  padding: 1.5rem;
-}
-
-h3 {
-  font-size: 3rem;
-  letter-spacing: 0.1rem; /*espaçamento entre as letras*/
-  color: var(--text-login);
-  text-align: center;
-  padding: 1.5rem;
-}
-
-h4 {
-  font-size: 3rem;
-  letter-spacing: 0.1rem; /*espaçamento entre as letras*/
-  color: var(--text-login);
-  text-align: center;
-  padding: 1.5rem;
-}
-
-#container-main p {
-  color: var(--text-login);
-  font-size: 2.8rem;
-  line-height: 3.2rem;
+.form {
+  font-size: 1.6rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-
-  width: 90%;
-  max-width: 980px;
-
-  margin: auto;
+  justify-content: center;
+  flex-direction: column;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
-.voltar-menu {
-  width: 50%;
+.form label,
+.form input,
+.form textarea,
+.form button {
   display: block;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: rgb(255, 255, 255);
-  background-color:var(--bg-menu);
-  margin: 0px auto 0px;
-  padding: 12px 30px;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: all 150ms linear 0s;
-  padding: 1.6rem;
+  width: 50%;
 }
 
-.voltar-menu:hover {
-  font-size: 1.3rem;
-  background-color: var(--bg-menu-hover);
-  border: 1px solid hsl(0, 0%, 80%);
-  transform: scale(1.1);
+.form label {
+  font-size: 2rem;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  color: var(--text-login);
+}
+
+.form input,
+.form textarea {
+  font: inherit;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  border-color: var(--text-color);
+}
+
+.form textarea {
+  min-height: 13rem;
+  resize: none;
+}
+
+.form input :hover,
+.form input :focus,
+.form textarea :hover,
+.form textarea :focus {
+  outline: none;
+}
+
+.form button {
+  display: block;
+  padding: 1rem;
+  background: var(--bg-menu);
+  color: white;
+  font: inherit;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.form button :hover,
+.form button :focus {
+  outline: none;
+  background: var(--bg-menu-hover);
 }
 
 footer {
-  font-size: 1.5rem;
-  margin: 0px auto 0px;
-  padding: 10px;
-  text-align: center;
-}
-
-footer p {
-  color: var(--text-login);
-}
+    font-size: 1.5rem;
+    margin: 0px auto 0px;
+    padding: 10rem;
+    text-align: center;
+  }
+  
+  footer p {
+    color: var(--text-login);
+  }
+  
