@@ -6,35 +6,39 @@
 }
 
 :root {
-  --text-color: hsl(133, 41%, 31%);
-  --text-login: hsl(133, 41%, 31%);
-  --bg-menu: hsl(133, 41%, 31%);
-  --br-menu-hover:hsl(133, 41%, 55%);
+  /*===========
+Verificados
+===========*/
   --bg-url: url(./assets/img/bg-desktop-light.jpg);
+  --switch-bg-url: url(./assets/img/sun.svg);
+  --bg-menu: hsl(133, 41%, 31%);
+  --br-menu-hover: hsl(133, 41%, 55%);
+  --text-white: hsl(0, 0%, 90%);
+  --header-a-hover: hsl(133, 41%, 55%);
+  --text-login: hsl(133, 41%, 31%);
+  --highlight-color: rgba(0, 0, 0, 0.1);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-houver: rgba(135, 106, 106, 0.264);
-  --surface-menu: hsl(133, 41%, 31%);
-  --surface-menu-houver: hsl(133, 41%, 55%);
-  --highlight-color: rgba(0, 0, 0, 0.1);
-  --switch-bg-url: url(./assets/img/sun.svg);
-  --squares-color: hsl(132, 46%, 75%);
+  --hero-p:hsl(47, 80%, 40%);
 }
 
 .light {
-  --text-color: hsl(133, 41%, 31%);
-  --text-login: hsl(132, 6%, 85%);
-  --bg-menu:hsl(133, 41%, 55%);
-  --br-menu-hover:hsl(133, 41%, 31%);
+  /*===========
+Verificados
+===========*/
   --bg-url: url(./assets/img/bg-desktop-dark.jpg);
+  --switch-bg-url: url(./assets/img/moon-stars.svg);
+  --bg-menu: hsl(133, 41%, 55%);  
+  --br-menu-hover: hsl(133, 41%, 31%);
+  --text-white: hsl(0, 0%, 90%);
+  --header-a-hover: hsl(133, 41%, 31%);
+  --text-login: hsl(0, 0%, 100%);
+  --highlight-color: rgba(255, 255, 255, 0.2);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-houver: rgba(199, 169, 169, 0.5);
-  --surface-menu: hsl(133, 41%, 55%);
-  --surface-menu-houver: hsl(132, 6%, 85%);
-  --highlight-color: rgba(255, 255, 255, 0.2);
-  --switch-bg-url: url(./assets/img/moon-stars.svg);
-  --squares-color: hsl(133, 41%, 31%);
+  --hero-p: hsl(47, 80%, 60%);
 }
 
 html {
@@ -45,7 +49,7 @@ html {
 html,
 body {
   height: 100vh;
-  font-family: 'Boogaloo', cursive;
+  font-family: "Boogaloo", cursive;
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
 }
@@ -66,7 +70,7 @@ header .container {
 
   width: 90%;
   max-width: 980px;
-  
+
   margin: auto;
 }
 
@@ -86,15 +90,16 @@ header nav ul li {
 
 header nav ul li a {
   text-decoration: none;
-  color: white;
+  color: var(--text-white);
   text-transform: uppercase;
-  font-size: 1.4rem; 
+  font-size: 1.4rem;
   padding: 2.4rem;
   transition: all 250ms linear 0s;
+  border-radius: 8px;
 }
 
 header nav ul li a:hover {
-  background: rgba(255,255,255, 0.15)
+  background: var(--header-a-hover);
 }
 
 h1 {
@@ -104,18 +109,6 @@ h1 {
   text-align: center;
   padding: 1.5rem;
 }
-
-/* Profile
-#profile {
-  text-align: center;
-  padding: 24px;
-}
-
-#profile img {
-  width: 50px;
-  margin-left: 20px;
-  padding: 15px 0;
-} */
 
 /* switch */
 #switch {
@@ -127,7 +120,7 @@ h1 {
 #switch button {
   width: 32px;
   height: 32px;
-  background: white var(--switch-bg-url) no-repeat center;
+  background: var(--text-white) var(--switch-bg-url) no-repeat center;
   border: 0;
   border-radius: 50%;
   position: absolute;
@@ -154,6 +147,49 @@ h1 {
   border: 1px solid var(--stroke-color);
   --webkit-backdrop-filter: blur(4px);
   border-radius: 9999px;
+}
+
+/*===============
+  questionario
+===============*/
+
+
+/*=============== 
+Intensidade
+==================*/
+.intensity-slider {
+  max-width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.questionario {
+  width: 300px;
+  font-size: 2rem;
+  color: var(--text-login);
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* Estilos para o slider */
+input[type="range"] {
+  width: 100%;
+  height: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+#mood-emoji {
+  font-size: 3rem;
+}
+
+/* Estilos para o valor da intensidade */
+#intensity-value {
+  font-size: 18rem;
+  color: #007bff;
 }
 
 /*=============== 
@@ -189,20 +225,51 @@ section.hero .container {
   display: flex;
 }
 
-section.hero p {
-  color: rgb(154, 142, 191);
-  font-size: 1.8rem;
-  line-height: 3.2rem;
-  margin: 10px 0px 0px;
+/*=============== 
+Saúde Mental
+==================*/
+section .saude-mental{
+  margin: 0px auto;
 }
 
+section .saude-mental h2{
+  font-size: 4.4rem;
+  letter-spacing: 0.1rem; /*espaçamento entre as letras*/
+  color: var(--text-login);
+  text-align: center;
+  padding: 0.5rem;
+}
+
+section .saude-mental .cabecalho{
+  font-size: 5rem;
+  color: var(--text-login);
+  text-align: center;
+  padding: 0.5rem;
+}
+
+section .saude-mental .texto{
+  font-size: 4rem;
+  letter-spacing: 0.1rem; /*espaçamento entre as letras*/
+  color: var(--hero-p);
+  text-align: center;
+  padding: 1.5rem;
+}
+section .saude-mental p {
+  color: var(--hero-p);
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+}
+
+/*=============== 
+footer
+==================*/
 footer {
-  font-size: 15px;
+  font-size: 1.8rem;
   margin: 100px auto 0px;
   padding: 10px;
   text-align: center;
 }
 
-footer p{
+footer p {
   color: var(--text-login);
 }

@@ -49,6 +49,18 @@
                 </div>
             </div>
         </section>
+        <section class="sentimentos">
+            <div class="intensity-slider">
+                <p class="questionario">Em uma escala de 0 a 7, 
+                    <br>Como você descreve seu humor neste momento? 
+                    <br>(0 = extremamente chateado, 7 = Extremamente Feliz.
+                </p>
+                <input type="range" min="0" max="7" step="1" value="0" id="intensity">
+                <!--label for="intensity">Intensidade: <span id="intensity-value">0</span></label-->
+                <label for="intensity">Intensidade de Humor:</label>
+                <span id="mood-emoji">😐</span>
+            </div>                
+        </section>
         <section class="hero">
             <div class="container">
               <section id="mensage">
@@ -60,22 +72,13 @@
                         </div>
                     </nav>
                 </section>
-                <section>
-                    
+                <section class="saude-mental">
+                    <h2>Saúde Mental</h2>
+                    <div class="cabecalho">Dicas para cuidar da sua saúde mental</div>
+                    <div class="texto">Fale dos seus sentimentos</div>
+                    <p>Conte sempre com sua rede de apoio, amigos e familiares <br> para conversar sobre seus problemas.
+                    <br> </p>
                 </section>
-                <!--div>
-                    <h2>
-                        As melhores tecnologias em programação, direto ao ponto e do jeito
-          certo.
-                    </h2>
-                    <p>
-                        No meio de tanta informação e da quantidade de ferramentas que
-          surgem todos os dias, você precisa de alguém que te leve na direção
-          certa.
-                    </p>
-                    <a href="#" class="button">Quero embarcar neste foguete!</a>
-                </div>
-                <img src="./images/melhores-tecnologias.svg" alt=""-->
             </div>
         </section>
         <footer>
@@ -83,68 +86,6 @@
         </footer>
         <ul class="squares"></ul>
         <script src="./style.js"></script>
+        <script src="./js/intensidade.js"></script>
     </body>
 </html>
-<!--
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="MinhaSaude">
-        <title>MinhaSaúde</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Fraunces:wght@700&display=swap" rel="stylesheet">
-        <link href="./css/animacao.css" rel="stylesheet" type="text/css">
-        <link href="style.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        <header>
-            <div class="container">
-                <img src="assets/img/Logo-light.png" alt="Logo - MinhaSaúde">
-                <div class="menu-section">
-                    <div class="menu-toggle">
-                        <div class="one"></div>
-                        <div class="two"></div>
-                        <div class="three"></div>
-                    </div>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="#">Starter</a>
-                            </li>
-                            <li>
-                                <a href="#">Bootcamp</a>
-                            </li>
-                            <li>
-                                <a href="#">Comunidade</a>
-                            </li>
-                            <li>
-                                <a href="#">Blog</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
-        <section class="form-section">
-            <h1>Menu</h1>
-            <div class="form-wrapper">
-                <div id="switch" onclick="toggleMode()">
-                    <button></button>
-                    <span></span>
-                </div>
-            </div>
-        </section>
-        <section class="hero"></section>
-        <main>
-            <section class="cards"></section>
-        </main>
-        <footer>
-            <p>&copy; 2023 Sistema de auto ajuda MinhaSaúde. Todos os direitos reservados.</p>
-        </footer>
-        <ul class="squares"></ul>
-        <script src="./js/animacao.js"></script>
-    </body>
-</html-->
