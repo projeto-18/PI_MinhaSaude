@@ -1,0 +1,294 @@
+/*ATENÇÃO NÃO APAGAR ESTE CÓDIGO
+ELE É O ANTIGO STYLE.CSS */
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+  }
+  
+  :root {
+    /*===========
+  Verificados
+  ===========*/
+    --text-color: hsl(133, 41%, 31%);
+    --text-login: hsl(133, 41%, 31%);
+    --text-white: hsl(0, 0%, 90%);
+    --bg-menu: hsl(133, 41%, 31%);
+    --bg-menu-hover: hsl(133, 41%, 55%);
+    --surface-menu: hsl(133, 41%, 31%);
+    --surface-menu-houver: hsl(133, 41%, 55%);
+    --surface-color: rgba(0, 0, 0, 0.05);
+    --surface-color-houver: rgba(135, 106, 106, 0.264);
+    --stroke-color: rgba(0, 0, 0, 0.5);
+    --highlight-color: rgba(0, 0, 0, 0.1);
+    --squares-color: hsl(132, 46%, 75%);
+    --header-a-hover: hsl(133, 41%, 55%);
+    --hero-p: hsl(47, 80%, 40%);
+    --bg-url: url(./assets/img/bg-desktop-light.jpg);
+    --switch-bg-url: url(./assets/img/sun.svg);
+  }
+  
+  .light {
+    /*===========
+  Verificados
+  ===========*/
+    --text-color: hsl(133, 41%, 31%);
+    --text-login: hsl(0, 0%, 100%);
+    --text-white: hsl(0, 0%, 90%);
+    --bg-menu: hsl(133, 41%, 55%);
+    --bg-menu-hover: hsl(133, 41%, 31%);
+    --surface-menu: hsl(133, 41%, 55%);
+    --surface-menu-houver: hsl(132, 6%, 85%);
+    --surface-color: rgba(255, 255, 255, 0.05);
+    --surface-color-houver: rgba(199, 169, 169, 0.5);
+    --stroke-color: rgba(255, 255, 255, 0.5);
+    --highlight-color: rgba(255, 255, 255, 0.2);
+    --squares-color: hsl(133, 41%, 31%);
+    --header-a-hover: hsl(133, 41%, 31%);
+    --hero-p: hsl(47, 80%, 60%);
+    --bg-url: url(./assets/img/bg-desktop-dark.jpg);
+    --switch-bg-url: url(./assets/img/moon-stars.svg);
+  }
+  
+  html {
+    /* a cada 1rem será considera 10px */
+    font-size: 62.5%;
+  }
+  
+  html,
+  body {
+    height: 100vh;
+    font-family: "Boogaloo", cursive;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  body {
+    background: var(--bg-url) no-repeat top center/cover;
+    font-size: 1.6rem;
+  }
+  
+  header {
+    background-color: var(--bg-menu);
+  }
+  
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    width: 90%;
+    max-width: 980px;
+  
+    margin: auto;
+  }
+  
+  header img {
+    width: 45px;
+    margin-left: 20px;
+    padding: 15px 0;
+  }
+  
+  header nav ul {
+    display: flex;
+  }
+  
+  header nav ul li {
+    list-style: none;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: var(--text-white);
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    padding: 2.4rem;
+    transition: all 250ms linear 0s;
+    border-radius: 8px;
+  }
+  
+  header nav ul li a:hover {
+    background: var(--header-a-hover);
+  }
+  
+  h1 {
+    font-size: 5rem;
+    letter-spacing: 0.1rem; /*espaçamento entre as letras*/
+    color: var(--text-login);
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  /* switch */
+  #switch {
+    width: 64px;
+    position: relative;
+    margin: 4px auto;
+  }
+  
+  #switch button {
+    width: 32px;
+    height: 32px;
+    background: white var(--switch-bg-url) no-repeat center;
+    border: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+    animation: slide-back 0.2s;
+  }
+  
+  #switch button:hover {
+    outline: 8px solid var(--highlight-color);
+  }
+  
+  .light #switch button {
+    animation: slide-in 0.4s forwards;
+  }
+  
+  #switch span {
+    display: block;
+    width: 64px;
+    height: 24px;
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    --webkit-backdrop-filter: blur(4px);
+    border-radius: 9999px;
+  }
+  
+  /*===============
+    questionario
+  ===============*/
+  
+  
+  /*=============== 
+  Intensidade
+  ==================*/
+  .intensity-slider {
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .questionario {
+    width: 300px;
+    font-size: 2rem;
+    color: var(--text-login);
+    text-align: center;
+    padding: 0.5rem;
+  }
+  
+  /* Estilos para o slider */
+  input[type="range"] {
+    width: 100%;
+    height: 20px;
+  }
+  
+  label {
+    color: var(--text-login);
+    font-size: 1.8rem;
+    letter-spacing: 0.5rem; /*espaçamento entre as letras*/
+  }
+  
+  #mood-emoji {
+    font-size: 5rem;
+  }
+  
+  /* Estilos para o valor da intensidade */
+  #intensity-value {
+    font-size: 18rem;
+    color: #007bff;
+  }
+  
+  /*=============== 
+  Menu Esquerdo
+  ==================*/
+  #mensage {
+    position: absolute;
+    display: flex;
+    width: 350px;
+    flex-flow: column wrap;
+    margin: 0px -250px 0px;
+  }
+  
+  .iframe {
+    width: 280px;
+    height: 240px;
+    margin: 0px auto 0px;
+  }
+  
+  /*=============== 
+  HERO
+  ==================*/
+  section.hero {
+    margin: 80px 0;
+  }
+  
+  section.hero .container {
+    width: 90%;
+    max-width: 980px;
+  
+    margin: auto;
+  
+    display: flex;
+  }
+  
+  /*=============== 
+  Saúde Mental
+  ==================*/
+  section .saude-mental{
+    margin: 0px auto;
+  }
+  
+  section .saude-mental h2{
+    font-size: 4.4rem;
+    letter-spacing: 0.1rem; /*espaçamento entre as letras*/
+    color: var(--text-login);
+    text-align: center;
+    padding: 0.5rem;
+  }
+  
+  section .saude-mental .cabecalho{
+    font-size: 5rem;
+    color: var(--text-login);
+    text-align: center;
+    padding: 0.5rem;
+  }
+  
+  section .saude-mental .texto{
+    font-size: 4rem;
+    letter-spacing: 0.1rem; /*espaçamento entre as letras*/
+    color: var(--hero-p);
+    text-align: center;
+    padding: 1.5rem;
+  }
+  section .saude-mental p {
+    color: var(--hero-p);
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+  }
+  
+  /*=============== 
+  footer
+  ==================*/
+  footer {
+    font-size: 1.8rem;
+    margin: 100px auto 0px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  footer p {
+    color: var(--text-login);
+  }
+  
