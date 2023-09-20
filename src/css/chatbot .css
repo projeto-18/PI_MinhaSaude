@@ -164,7 +164,7 @@ h1 {
   padding: 2.4rem;
   border-radius: 10px;
 }
-
+ 
 .chat-log {
   height: 300px;
   overflow-y: scroll;
@@ -179,7 +179,7 @@ h1 {
 }
 
 #send-button {
-  background-color: #007bff;
+  background-color:#007bff; 
   color: white;
   border: none;
   padding: 5px 10px;
