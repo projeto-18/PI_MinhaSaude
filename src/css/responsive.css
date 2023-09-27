@@ -1,5 +1,22 @@
-
 /* media queries */
+:root {
+    /*===========
+    Verificados
+    ===========*/
+    --bg-menu: hsl(133, 41%, 31%);
+    --bg-url: url(./images/bg-desktop-light.jpg);
+    --switch-bg-url: url(./images/sun.svg);
+}
+
+.light {
+    /*===========
+    Verificados
+    ===========*/
+    --bg-menu: hsl(133, 41%, 55%);
+    --bg-url: url(./images/bg-desktop-dark.jpg);
+    --switch-bg-url: url(./images/moon-stars.svg);
+}
+
 html {
     font-size: 50%;
 }
@@ -15,11 +32,11 @@ html {
         order: -1;
     }
 
-      #mesage {
+    #mesage {
         order: -1;
     }
 
-   .hero .container #question {
+    .hero .container #question {
         order: -1;
     }
 
@@ -53,14 +70,14 @@ html {
     /* fullscreen */
     .menu-section.on {
         position: absolute;
-        top:0;
-        left:0;
-        
+        top: 0;
+        left: 0;
+
         width: 100vw;
         height: 100vh;
 
-        background-color: #7159c1;
-        
+        background-color: var(--bg-menu);
+
         z-index: 10;
 
         display: flex;
@@ -95,12 +112,12 @@ html {
         display: block;
     }
 
-    .menu-section.on nav ul a{
+    .menu-section.on nav ul a {
         transition-duration: 0.5s;
         font-size: 3rem;
         line-height: 4rem;
         display: block;
-        
+
     }
 
 }

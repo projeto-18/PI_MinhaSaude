@@ -50,6 +50,7 @@
 }
 
 html {
+  background: var(--bg-url) no-repeat top center/cover;
   /* a cada 1rem será considera 10px */
   font-size: 62.5%;
 }
@@ -63,7 +64,6 @@ body {
 }
 
 body {
-  background: var(--bg-url) no-repeat top center/cover;
   font-size: 1.6rem;
 }
 
@@ -77,7 +77,7 @@ header .container {
   justify-content: space-between;
 
   width: 90%;
-  max-width: 980px;
+  max-width: 1024px;
 
   margin: auto;
 }
