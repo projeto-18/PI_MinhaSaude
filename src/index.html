@@ -1,75 +1,61 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="MinhaSaude">
     <title>MinhaSaúde</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Fraunces:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Fraunces:wght@700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 768px)">
     <link href="./css/animacao.css" rel="stylesheet" type="text/css">
     <link href="style.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        <header>
-            <div class="container">
-                <img src="./assets/img/Logo-light.png" alt="MinhaSaíde">      
-                <div class="menu-section">
-                    <div class="menu-toggle">
-                        <div class="one"></div>
-                        <div class="two"></div>
-                        <div class="three"></div>
-                    </div>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="#">Início</a>
-                            </li>
-                            <li>
-                                <a href="./html/chatbot.html">Chatbot</a>
-                            </li>
-                            <li>
-                                <a href="./html/sobre.html">Sobre</a>
-                            </li>
-                            <li>
-                                <a href="./html/contato.html">Contato</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
+</head>
+
+<body>
+    <header>
         <div class="container">
-            <h1>MinhaSaúde</h1>
-            <div class="form-wrapper">
-                <div id="switch" onclick="toggleMode()">
-                    <button></button>
-                    <span></span>
+            <img src="./assets/img/Logo-light.png" alt="MinhaSaíde">
+            <div class="menu-section">
+                <div class="menu-toggle">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
                 </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">Início</a>
+                        </li>
+                        <li>
+                            <a href="./html/chatbot.html">Chatbot</a>
+                        </li>
+                        <li>
+                            <a href="./html/sobre.html">Sobre</a>
+                        </li>
+                        <li>
+                            <a href="./html/contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
-        <section class="hero">
-            <div class="container">
-                <div id="mensage">
-                    <nav class="superior">
-                        <div class="iframe">
-                            <div class="carrosel">
-                                <iframe
-                                    src="./html/mensagens.html"
-                                    frameborder="0"
-                                    width="280"
-                                    height="300"
-                                    scolling="no"
-                                    style="border:none;"
-                                    allowfullscreen=""
-                                    loading="lazy"
-                                ></iframe>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
+    </header>
+    <div class="container">
+        <h1>MinhaSaúde</h1>
+        <div class="form-wrapper">
+            <div id="switch" onclick="toggleMode()">
+                <button></button>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <section class="hero">
+        <div class="container">
+            <div class="humor">
                 <div id="question">
                     <p class="questionario">
                         Em uma escala de 0 a 7,
@@ -80,35 +66,51 @@
                     </p>
                 </div>
                 <div class="intensity-slider">
-                    <input
-                        type="range"
-                        min="0"
-                        max="7"
-                        step="1"
-                        value="0"
-                        id="intensity"
-                    >
+                    <input type="range" min="0" max="7" step="1" value="0" id="intensity">
                     <!--label for="intensity">Intensidade: <span id="intensity-value">0</span></label-->
                     <label for="intensity">Intensidade de Humor</label>
                     <br>
                     <span id="mood-emoji">😐</span>
                 </div>
             </div>
-        </section>
-        <main id="saude-mental">
-            <div class="saude-mental">
-                <h2>Saúde Mental</h2>
-                <div class="cabecalho">Dicas para cuidar da sua saúde mental</div>
-                <div class="texto">Fale dos seus sentimentos</div>
-                <p>Conte sempre com sua rede de apoio, amigos e familiares
-                    <br>
-                    para conversar sobre seus problemas.
-                    <br>
-                </p>
-            </div>
-            
-        </main>
-        <!--section class="form-section">
+        </div>
+        <h2 class="mensagens">Mensagens</h2>
+        <div id="mensage">
+            <nav class="superior">
+                <div class="iframe">
+                    <div class="carrosel">
+                        <iframe
+                            src="./html/mensagens.html"
+                            frameborder="0"
+                            width="280"
+                            height="300"
+                            scolling="no"
+                            style="border:none;"
+                            allowfullscreen=""
+                            loading="lazy"
+                        ></iframe>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <main id="saude-mental">
+        <div class="saude-mental">
+            <h2>Saúde Mental</h2>
+            <div class="cabecalho">Dicas para cuidar da sua saúde mental</div>
+            <div class="texto">Fale dos seus sentimentos</div>
+            <p>Conte sempre com sua rede de apoio, amigos e familiares
+                <br>
+                para conversar sobre seus problemas.
+                <br>
+            </p>
+        </div>
+        </div>
+
+
+
+    </main>
+    <!--section class="form-section">
             <h1>MinhaSaúde</h1>
             <div class="form-wrapper">
                 <div id="switch" onclick="toggleMode()">
@@ -124,8 +126,8 @@
                     <br>(0 = extremamente chateado, 7 = Extremamente Feliz.
                 </p>
                 <input type="range" min="0" max="7" step="1" value="0" id="intensity"-->
-                <!--label for="intensity">Intensidade: <span id="intensity-value">0</span></label-->
-                <!--label for="intensity">Intensidade de Humor:</label>
+    <!--label for="intensity">Intensidade: <span id="intensity-value">0</span></label-->
+    <!--label for="intensity">Intensidade de Humor:</label>
                 <span id="mood-emoji">😐</span>
             </div>                
         </section>
@@ -149,16 +151,23 @@
                 </section>
             </div>
         </section-->
-        <footer>
-            <p>&copy; 2023 Sistema de auto ajuda MinhaSaúde. Todos os direitos reservados.</p>
-        </footer>
-        <ul class="squares"></ul>
-        <script src="./js/style.js"></script>
-        <script src="./js/menu.js"></script>
-        <script src="./js/intensidade.js"></script>
+    <footer>
+        <p>&copy; 2023 Sistema de auto ajuda MinhaSaúde. Todos os direitos reservados.</p>
+    </footer>
+    <ul class="squares"></ul>
+    <script src="./js/style.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/intensidade.js"></script>
 
-        <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quisquam, facere suscipit reprehenderit illo vero illum hic inventore. Sed earum tenetur, doloribus facere fuga aspernatur. Tempora voluptatem labore consequatur officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At tempora minima alias corrupti dolores maiores laborum, voluptatem porro, nam harum doloribus vitae nulla ab, accusamus facilis dolorem. Distinctio, dolores at? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab est eveniet, omnis, voluptatem qui animi repudiandae ipsa sunt aliquam nulla vitae, itaque repellat perferendis ipsam necessitatibus? Officiis sint sequi voluptatum.</p>
-        </div>
-    </body>
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quisquam, facere suscipit reprehenderit
+            illo vero illum hic inventore. Sed earum tenetur, doloribus facere fuga aspernatur. Tempora voluptatem
+            labore consequatur officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At tempora minima
+            alias corrupti dolores maiores laborum, voluptatem porro, nam harum doloribus vitae nulla ab, accusamus
+            facilis dolorem. Distinctio, dolores at? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab est
+            eveniet, omnis, voluptatem qui animi repudiandae ipsa sunt aliquam nulla vitae, itaque repellat perferendis
+            ipsam necessitatibus? Officiis sint sequi voluptatum.</p>
+    </div>
+</body>
+
 </html>
