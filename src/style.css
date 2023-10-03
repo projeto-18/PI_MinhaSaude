@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   outline: 0;
+  font-family: "Boogaloo", cursive;
 }
 
 :root {
@@ -14,6 +15,7 @@
   --text-white: hsl(0, 0%, 90%);
   --bg-menu: hsl(133, 41%, 31%);
   --bg-menu-hover: hsl(133, 41%, 55%);
+  --bg-flex: hsl(136, 86%, 81%);
   --surface-menu: hsl(133, 41%, 31%);
   --surface-menu-houver: hsl(133, 41%, 55%);
   --surface-color: rgba(0, 0, 0, 0.05);
@@ -25,17 +27,23 @@
   --hero-p: hsl(47, 80%, 40%);
   --bg-url: url(./assets/img/bg-desktop-light.jpg);
   --switch-bg-url: url(./assets/img/sun.svg);
+  --bg-flex-img-chat: url(./assets/img/chat_light.png);
+  --bg-flex-img-flor: url(./assets/img/flor_light.png);
+  --bg-flex-img-ajuda: url(./assets/img/ajuda_light.png);
+  --text-family: "Boogaloo", cursive;
 }
 
 .light {
   /*===========
   Verificados
   ===========*/
+  --text-family: 'Courier New', Courier, monospace;
   --text-color: hsl(133, 41%, 31%);
   --text-login: hsl(0, 0%, 100%);
   --text-white: hsl(0, 0%, 90%);
   --bg-menu: hsl(133, 41%, 55%);
   --bg-menu-hover: hsl(133, 41%, 31%);
+  --bg-flex: hsl(133, 41%, 31%);
   --surface-menu: hsl(133, 41%, 55%);
   --surface-menu-houver: hsl(132, 6%, 85%);
   --surface-color: rgba(255, 255, 255, 0.05);
@@ -47,6 +55,9 @@
   --hero-p: hsl(47, 80%, 60%);
   --bg-url: url(./assets/img/bg-desktop-dark.jpg);
   --switch-bg-url: url(./assets/img/moon-stars.svg);
+  --bg-flex-img-chat: url(./assets/img/chat_dark.png);
+  --bg-flex-img-flor: url(./assets/img/flor_dark.png);
+  --bg-flex-img-ajuda: url(./assets/img/ajuda_dark.png);
 }
 
 html {
@@ -148,7 +159,8 @@ header nav ul li a:hover {
 
 h1 {
   font-size: 5rem;
-  letter-spacing: 0.1rem; /*espaçamento entre as letras*/
+  letter-spacing: 0.1rem;
+  /*espaçamento entre as letras*/
   color: var(--text-login);
   text-align: center;
   padding: 1.5rem;
@@ -207,12 +219,14 @@ input[type="range"] {
 label {
   color: var(--text-color);
   font-size: 1.8rem;
-  letter-spacing: 0.5rem; /*espaçamento entre as letras*/
+  letter-spacing: 0.5rem;
+  /*espaçamento entre as letras*/
 }
 
 #mood-emoji {
   font-size: 5rem;
 }
+
 /*=============== 
 Estilos para o valor da intensidade 
 ==================*/
@@ -232,12 +246,12 @@ Mensagens
   letter-spacing: 0.5rem;
 }
 
-#mensage{
+#mensage {
   background-color: var(--bg-menu);
   border: 5px solid white;
   position: relative;
   display: inline-block;
-  padding: 1rem 1rem;  
+  padding: 1rem 1rem;
   border-radius: 15px;
   margin-left: 40%;
 }
@@ -257,6 +271,7 @@ main {
   margin: auto;
 
   display: flex;
+  flex-direction: column;
 }
 
 #saude-mental {
@@ -267,7 +282,8 @@ main {
 
 main h2 {
   font-size: 4rem;
-  letter-spacing: 0.1rem; /*espaçamento entre as letras*/
+  letter-spacing: 0.1rem;
+  /*espaçamento entre as letras*/
   color: var(--text-login);
   text-align: center;
 }
@@ -280,7 +296,8 @@ main .saude-mental .cabecalho {
 
 main .saude-mental .texto {
   font-size: 3rem;
-  letter-spacing: 0.1rem; /*espaçamento entre as letras*/
+  letter-spacing: 0.1rem;
+  /*espaçamento entre as letras*/
   color: var(--hero-p);
   text-align: center;
 }
@@ -290,6 +307,102 @@ main .saude-mental p {
   color: var(--hero-p);
   font-size: 2rem;
   line-height: 3.2rem;
+}
+
+/*=============== 
+Flex
+==================*/
+#flex {
+  display: flex;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-flex-flow: row;
+  flex-flow: row;
+  gap: 2rem;
+  align-items: center;
+  justify-content:center;
+  margin: 0px;
+}
+
+.chat h2,
+.flor h2,
+.ajuda h2 {
+  font-family: var(--text-family);
+  font-size: 3.5rem;
+  font: bold;
+  font-style: italic;
+  color: var(--text-login);
+  margin: 60px auto 30px;
+}
+
+.chat p,
+.flor p,
+.ajuda p {
+  font-family: var(--text-family);
+  font-size: 2rem;
+  color: var(--hero-p);
+  /* color: var(--text-login); */
+  font-style: italic;
+  margin: -30px auto 0px;
+}
+
+.flex-container-chat,
+.flex-container-flor,
+.flex-container-ajuda {
+  width: 45rem;
+  height: 30rem;
+  position: relative;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.flex-item-chat,
+.flex-item-flor,
+.flex-item-ajuda {
+  background: var(--bg-flex);
+  color: var(--bg-flex);
+  font-size: 3rem;
+  text-align: center;
+  border-radius: 15px;
+  border: 5px solid white;
+  -webkit-transition: box-shadow .3s, border-color .3s;
+  -moz-transition: box-shadow .3s, border-color .3s;
+  -o-transition: box-shadow .3s, border-color .3s;
+  -ms-transition: box-shadow .3s, border-color .3s;
+  transition: box-shadow .3s, border-color .3s;
+}
+
+.flex-item-chat {
+  background-image: var(--bg-flex-img-chat);
+  background-position: 5% 3%;
+  background-repeat: no-repeat;
+  display: block;
+  align-items: center;
+}
+
+.flex-item-flor {
+  background-image: var(--bg-flex-img-flor);
+  background-position: 5% 3%;
+  background-repeat: no-repeat;
+  display: block;
+  align-items: center;
+}
+
+.flex-item-ajuda {
+  background-image: var(--bg-flex-img-ajuda);
+  background-position: 5% 3%;
+  background-repeat: no-repeat;
+  display: block;
+  align-items: center;
 }
 
 /*=============== 
@@ -305,3 +418,4 @@ footer {
 footer p {
   color: var(--text-login);
 }
+
