@@ -30,6 +30,11 @@
   --bg-flex-img-chat: url(./assets/img/chat_light.png);
   --bg-flex-img-flor: url(./assets/img/flor_light.png);
   --bg-flex-img-ajuda: url(./assets/img/ajuda_light.png);
+  --bg-flex-img-presente: url(./assets/img/presente_light.png);
+  --bg-flex-img-identifique: url(./assets/img/identifique_light.png);
+  --bg-flex-img-evite: url(./assets/img/evite_light.png);
+  --bg-flex-img-reduza: url(./assets/img/reduza_light.png);
+  --bg-flex-img-compartilhe: url(./assets/img/positivas_light.png);
   --text-family: "Boogaloo", cursive;
 }
 
@@ -58,6 +63,12 @@
   --bg-flex-img-chat: url(./assets/img/chat_dark.png);
   --bg-flex-img-flor: url(./assets/img/flor_dark.png);
   --bg-flex-img-ajuda: url(./assets/img/ajuda_dark.png);
+  --bg-flex-img-presente: url(./assets/img/presente_dark.png);
+  --bg-flex-img-identifique: url(./assets/img/identifique_dark.png);
+  --bg-flex-img-evite: url(./assets/img/evite_dark.png);
+  --bg-flex-img-reduza: url(./assets/img/reduza_dark.png);
+  --bg-flex-img-compartilhe: url(./assets/img/positivas_dark.png);
+  --text-family: "Boogaloo", cursive;
 }
 
 html {
@@ -310,6 +321,14 @@ main .saude-mental p {
 }
 
 /*=============== 
+Cabeçalho de ambos Flex
+==================*/
+.saude-mental h2 {
+  font-size: 5rem;
+  padding: 1.5rem;
+}
+
+/*=============== 
 Flex
 ==================*/
 #flex {
@@ -373,7 +392,7 @@ Flex
   font-size: 3rem;
   text-align: center;
   border-radius: 15px;
-  border: 5px solid white;
+  border: 5px solid  rgb(157, 157, 157);
   -webkit-transition: box-shadow .3s, border-color .3s;
   -moz-transition: box-shadow .3s, border-color .3s;
   -o-transition: box-shadow .3s, border-color .3s;
@@ -406,20 +425,6 @@ Flex
 }
 
 /*=============== 
-footer
-==================*/
-footer {
-  font-size: 1.8rem;
-  margin: 100px auto 0px;
-  padding: 1.5rem;
-  text-align: center;
-}
-
-footer p {
-  color: var(--text-login);
-}
-
-/*=============== 
 Flex-apoio
 ==================*/
 #flex-apoio {
@@ -436,6 +441,7 @@ Flex-apoio
   justify-content: center;
   margin: 0px;
 }
+
 #flex-apoio2 {
   display: flex;
   list-style: none;
@@ -466,7 +472,7 @@ Flex-apoio
 .presente p,
 .reconhecer p,
 .julgamento p,
-.reduza p{
+.reduza p {
   font-family: var(--text-family);
   font-size: 2rem;
   color: var(--hero-p);
@@ -502,7 +508,7 @@ Flex-apoio
   font-size: 3rem;
   text-align: center;
   border-radius: 15px;
-  border: 5px solid white;
+  border: 5px solid rgb(157, 157, 157);
   -webkit-transition: box-shadow .3s, border-color .3s;
   -moz-transition: box-shadow .3s, border-color .3s;
   -o-transition: box-shadow .3s, border-color .3s;
@@ -510,8 +516,9 @@ Flex-apoio
   transition: box-shadow .3s, border-color .3s;
 }
 
+
 .flex-item-presente {
-  background-image: var(--bg-flex-img-chat);
+  background-image: var(--bg-flex-img-presente);
   background-position: 5% 3%;
   background-repeat: no-repeat;
   display: block;
@@ -519,7 +526,7 @@ Flex-apoio
 }
 
 .flex-item-reconhecer {
-  background-image: var(--bg-flex-img-flor);
+  background-image: var(--bg-flex-img-identifique);
   background-position: 5% 3%;
   background-repeat: no-repeat;
   display: block;
@@ -527,16 +534,105 @@ Flex-apoio
 }
 
 .flex-item-julgamento {
-  background-image: var(--bg-flex-img-ajuda);
+  background-image: var(--bg-flex-img-evite);
   background-position: 5% 3%;
   background-repeat: no-repeat;
   display: block;
   align-items: center;
 }
+
 .flex-item-reduza {
-  background-image: var(--bg-flex-img-ajuda);
+  background-image: var(--bg-flex-img-reduza);
   background-position: 5% 3%;
   background-repeat: no-repeat;
   display: block;
   align-items: center;
 }
+
+/*=============== 
+Flex compartilhe
+==================*/
+#flex-compartilhe {
+  display: flex;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-flex-flow: row;
+  flex-flow: row;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+}
+
+.compartilhe h2 {
+  font-family: var(--text-family);
+  font-size: 3.5rem;
+  font: bold;
+  font-style: italic;
+  color: var(--text-login);
+  margin: 60px auto 30px;
+}
+
+.compartilhe p {
+  font-family: var(--text-family);
+  font-size: 2rem;
+  color: var(--hero-p);
+  /* color: var(--text-login); */
+  font-style: italic;
+  margin: -30px auto 0px;
+}
+
+.flex-container-compartilhe {
+  width: 60rem;
+  height: 20rem;
+  position: relative;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  padding: 0.5rem;
+}
+
+.flex-item-compartilhe {
+  /* background: var(--bg-flex); */
+  color: var(--bg-flex);
+  font-size: 3rem;
+  text-align: center;
+  border-radius: 15px;
+  border: 5px solid rgb(157, 157, 157);
+  -webkit-transition: box-shadow .3s, border-color .3s;
+  -moz-transition: box-shadow .3s, border-color .3s;
+  -o-transition: box-shadow .3s, border-color .3s;
+  -ms-transition: box-shadow .3s, border-color .3s;
+  transition: box-shadow .3s, border-color .3s;
+}
+
+.flex-item-compartilhe {
+  background-image: var(--bg-flex-img-);
+  background-position: 5% 3%;
+  background-repeat: no-repeat;
+  display: block;
+  align-items: center;
+}
+
+/*=============== 
+footer
+==================*/
+footer {
+  font-size: 1.8rem;
+  margin: 100px auto 0px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+footer p {
+  color: var(--text-login);
+}
+
