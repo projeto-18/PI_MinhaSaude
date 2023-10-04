@@ -615,12 +615,13 @@ Flex compartilhe
 }
 
 .flex-item-compartilhe {
-  background-image: var(--bg-flex-img-);
+  background-image: var(--bg-flex-img-compartilhe);
   background-position: 5% 3%;
   background-repeat: no-repeat;
   display: block;
   align-items: center;
 }
+
 
 /*=============== 
 footer
@@ -636,3 +637,31 @@ footer p {
   color: var(--text-login);
 }
 
+#tratamento hr {
+  height: 0.5rem;
+  border: none;
+  background-color: hsl(137, 93%, 24%);
+  opacity: .5;
+  width: 750px;
+   margin: 30px auto;
+}
+
+.tratamentos h2 {
+  font-size: 5rem;
+  padding: 0.5rem;
+}
+
+.menu-pills {
+  list-style: none;
+  margin: 0;
+  margin-left: -5px;
+  padding: 0;
+}
+
+.menu-pills li {
+  font-size: 2.5rem;
+  display: inline-block;
+  list-style: none;
+  margin: 5px 5px 5px 0;
+  padding: 0;
+}
