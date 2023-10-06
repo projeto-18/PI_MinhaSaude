@@ -372,7 +372,7 @@ Flex
 .flex-container-flor,
 .flex-container-ajuda {
   width: 45rem;
-  height: 30rem;
+  height: 13em;
   position: relative;
   list-style: none;
   display: -webkit-box;
@@ -392,7 +392,7 @@ Flex
   font-size: 3rem;
   text-align: center;
   border-radius: 15px;
-  border: 5px solid  rgb(157, 157, 157);
+  border: 5px solid rgb(157, 157, 157);
   -webkit-transition: box-shadow .3s, border-color .3s;
   -moz-transition: box-shadow .3s, border-color .3s;
   -o-transition: box-shadow .3s, border-color .3s;
@@ -637,31 +637,77 @@ footer p {
   color: var(--text-login);
 }
 
+/*=============== 
+tratamento
+==================*/
 #tratamento hr {
   height: 0.5rem;
   border: none;
   background-color: hsl(137, 93%, 24%);
   opacity: .5;
   width: 750px;
-   margin: 30px auto;
+  margin: 30px auto;
 }
 
 .tratamentos h2 {
+  color: var(--bg-menu);
   font-size: 5rem;
-  padding: 0.5rem;
+  padding: 1rem;
+}
+
+.tratamentos h3 {
+  font-family: var(--text-family);
+  font-size: 2.8rem;
+  text-align: center;
+  color: var(--hero-p);
+  font-style: italic;
+  padding: 1rem;
+}
+
+p {
+  font-size: 2.2rem;
+  text-align: center;
+  color: var(--bg-menu);
+  font-style: italic;
+  padding: 1rem;
 }
 
 .menu-pills {
+  text-align: center;
   list-style: none;
   margin: 0;
   margin-left: -5px;
-  padding: 0;
+  padding: 2rem;
 }
 
 .menu-pills li {
-  font-size: 2.5rem;
   display: inline-block;
   list-style: none;
   margin: 5px 5px 5px 0;
   padding: 0;
+}
+
+.menu-pills a {
+  display: inline-block !important;
+  font-weight: 600;
+  letter-spacing: .02em;
+  padding: 10px 25px;
+  background: #e2f1e4;
+  border-radius: 100px;
+}
+
+.menu-pills a:hover {
+  color: hsl(133, 41%, 31%) !important;
+  background: hsl(136, 86%, 81%);
+  box-shadow: 0 0 20px rgba(140, 152, 164, .25);
+}
+
+.hentry .menu-pills a {
+  text-decoration: none;
+}
+
+.menu-pills.menu-pills-block li,
+.menu-pills.menu-pills-block a {
+  display: block !important;
+  width: 100% !important;
 }
