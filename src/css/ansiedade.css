@@ -161,7 +161,8 @@ h2 {
     letter-spacing: 0.3rem; /*espaçamento entre as letras*/
     color: var(--text-login);
     text-align: center;
-    padding: 2rem;
+    margin: 50px auto;
+    padding: 1.5rem;
 }
 
 h3 {
@@ -169,15 +170,17 @@ h3 {
     font-size: 2.8rem;
     line-height: 3.8rem;
     text-align: center;
+    padding: 1.5rem;
 }
 
 p {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
+    margin-left: auto;
     text-align: center;
-    color: var(--bg-menu);
-    font-style: italic;
-    padding: 1rem;
-  }
+    justify-content: center;
+    color: var(--text-login);
+    margin: 0 20% 0;
+}
 
 /*=============== 
 footer
