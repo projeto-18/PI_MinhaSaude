@@ -93,12 +93,24 @@ header {
   width: 100%;
 }
 
+@media screen and (max-width: 790px){
+  header > .container > h1 {
+    font-size: 3rem;
+  }
+}
+  
+@media screen and (max-width: 840px){
+header > .container > .cabecalho > ul > li > a{
+  font-size: 1.5rem;
+  letter-spacing: none;
+}
+ }
+
 header .container {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: 5%;
-  
   
 }
 
@@ -181,17 +193,16 @@ h1 {
 HERO
 ==================*/
 section.hero {
-  margin: 90px 0;
-}
-
-section.hero .container {
-  width: 90%;
-  max-width: 980px;
-
-  margin: auto;
-
+  margin-bottom: 5vh;
+  margin-left: 25vh;
+  margin-top: -20vh;
+  margin-bottom: 10vh;
+  justify-content: center;
+  align-items: center;
   display: flex;
 }
+
+
 
 /*=============== 
 Intensidade
@@ -260,11 +271,12 @@ Mensagens
 #mensage {
   background-color: var(--bg-menu);
   border: 5px solid white;
-  position: relative;
   padding: 1rem 1rem;
   border-radius: 15px;
-  /* margin-left: 0,5%; */
-  margin: 30px 100px -30px;
+  max-width: 310px;
+  margin-top: -2vh;
+  margin-bottom: 6vh;
+  margin-left: 1vh;
   
 }
 
