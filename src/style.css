@@ -92,13 +92,28 @@ header {
   background-color: var(--bg-menu);
   width: 100%;
 }
+header > .container > .cabecalho > ul > li > a{
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 990px){
+  header > .container > h1 {
+    font-size: 3rem;
+  }
+}
+  
+@media screen and (max-width: 990px){
+header > .container > .cabecalho > ul > li > a{
+  font-size: 1.7rem;
+  letter-spacing: none;
+}
+ }
 
 header .container {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: 5%;
-  
   
 }
 
@@ -181,17 +196,16 @@ h1 {
 HERO
 ==================*/
 section.hero {
-  margin: 90px 0;
-}
-
-section.hero .container {
-  width: 90%;
-  max-width: 980px;
-
-  margin: auto;
-
+  margin-bottom: 5vh;
+  margin-left: 25vh;
+  margin-top: -20vh;
+  margin-bottom: 10vh;
+  justify-content: center;
+  align-items: center;
   display: flex;
 }
+
+
 
 /*=============== 
 Intensidade
@@ -260,11 +274,12 @@ Mensagens
 #mensage {
   background-color: var(--bg-menu);
   border: 5px solid white;
-  position: relative;
   padding: 1rem 1rem;
   border-radius: 15px;
-  /* margin-left: 0,5%; */
-  margin: 30px 100px -30px;
+  max-width: 310px;
+  margin-top: -2vh;
+  margin-bottom: 6vh;
+  margin-left: 1vh;
   
 }
 
@@ -276,21 +291,27 @@ Mensagens
 /*=============== 
 MAIN
 ==================*/
-main {
-  width: 90%;
-  max-width: 980px;
 
+
+
+main >section#flex {
   margin: auto;
-
   display: flex;
+  flex-direction: row;
+  margin-bottom: 10vw;
+  margin-top: 1vw;
+  
+}
+
+@media screen and (max-width: 1390px) {
+main > section#flex{
+  display: flex;
+  margin: auto;
   flex-direction: column;
 }
-
-#saude-mental {
-  justify-content: center;
-  padding: 2rem;
-  margin: -120px auto;
+  
 }
+
 
 main h2 {
   font-size: 4rem;
@@ -314,11 +335,28 @@ main .saude-mental .texto {
   text-align: center;
 }
 
+.saude-mental2 {
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  /*espaçamento entre as letras*/
+  color: var(--text-login);
+  text-align: center;
+  margin-top: -8vw;
+}
+
 main .saude-mental p {
   text-align: center;
   color: var(--hero-p);
   font-size: 2rem;
   line-height: 3.2rem;
+  
+}
+
+main > .saude-mental {
+  font-size: 5rem;
+  color: var(--text-login);
+  text-align: center;
+  margin-top: -5vw;
 }
 
 /*=============== 
@@ -428,6 +466,11 @@ Flex
 /*=============== 
 Flex-apoio
 ==================*/
+
+.tratamentos > h2{
+  justify-content: center;
+  text-align: center;
+}
 #flex-apoio {
   display: flex;
   list-style: none;
