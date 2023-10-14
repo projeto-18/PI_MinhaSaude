@@ -166,11 +166,15 @@ h1 {
 }
  
 .chat-log {
+  text-decoration: none;
   height: 300px;
   overflow-y: scroll;
   border: 1px solid #ccc;
   padding: 1rem;
   margin-bottom: 10px;
+  color: white;
+  letter-spacing: 0.2rem;
+  font-style: italic;
 }
 
 #user-input {

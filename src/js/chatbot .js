@@ -62,7 +62,7 @@ function sendMessage() {
     
     // Simulação de resposta do chatbot (substitua isso com a lógica real):
     setTimeout(() => {
-        const chatbotResponse = 'Olá! Isso é uma resposta do chatbot.';
+        const chatbotResponse = 'Olá! Bem vindo ao aplicativo web MinhaSaúde. Aqui a ideia não é substituir um psicólogo ou profissional da saúde mental, mas sim oferecer suporte emocional.Fui projetado para dar conselhos e incentivar a pessoa a falar sobre seus problemas. Você quer conversar comigo? 1 - Sim 2 - Não.';
         appendMessage('Chatbot:', chatbotResponse);
     }, 1000);
 
