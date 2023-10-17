@@ -1,0 +1,30 @@
+A ideia não é substituir um psicólogo, mas sim oferecer suporte emocional.
+
+É o caso de uma startup chamada Inflection AI, que lançou o chatbot Pi (abreviação de personal intelligence, ou “inteligência pessoal”), projetado para dar conselhos e incentivar a pessoa a falar sobre seus problemas.
+
+minhasa-de@minhasaude-387701.iam.gserviceaccount.com
+
+chave>
+cd3692193a2ff07d3046a9acfe101408101c46eb
+
+
+Condições
+1
+1,1-,1.,sim,quero,sim quero,gostaria,sim gostaria,com certeza,one,yes,positivo
+
+2
+2,2-,2.,não,cancelar,não obrigado,não quero,two,no
+
+
+Mensagens do chatbot
+Apresentação:
+Olá!
+Bem vindo ao aplicativo web MinhaSaúde.
+
+Aqui a ideia não é substituir um psicólogo ou profissional da saúde mental, mas sim oferecer suporte emocional.
+
+Fui projetado para dar conselhos e incentivar a pessoa a falar sobre seus problemas.
+
+Você quer conversar comigo?
+1 - Sim
+2 - Não
