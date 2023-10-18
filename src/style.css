@@ -7,13 +7,16 @@
 }
 
 :root {
-  /*===========
-  Verificados
-  ===========*/
+  --bg-url: url(./assets/img/bg-desktop-light.jpg);
+  --bg-menu: hsl(133, 41%, 31%);
+  --text-cabecalho: hsl(0, 0%, 100%);
+  --bg-botao: hsl(60, 100%, 50%);
+  --bg-light-dark: rgb(255, 0, 0);
+  --sol-lua: rgb(255, 0, 0);
+  --text-p: hsl(133, 41%, 31%);
   --text-color: hsl(133, 41%, 31%);
   --text-login: hsl(133, 41%, 31%);
   --text-white: hsl(0, 0%, 90%);
-  --bg-menu: hsl(133, 41%, 31%);
   --bg-menu-hover: hsl(133, 41%, 55%);
   --bg-flex: hsl(136, 86%, 81%);
   --surface-menu: hsl(133, 41%, 31%);
@@ -21,12 +24,11 @@
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-houver: rgba(135, 106, 106, 0.264);
   --stroke-color: rgba(0, 0, 0, 0.5);
-  --highlight-color: rgba(0, 0, 0, 0.1);
+  --highlight-color: rgba(255, 255, 255, 0.2);
   --squares-color: hsl(132, 46%, 75%);
   --header-a-hover: hsl(133, 41%, 55%);
   --hero-p: hsl(47, 80%, 40%);
-  --bg-url: url(./assets/img/bg-desktop-light.jpg);
-  --switch-bg-url: url(./assets/img/sun.svg);
+  /* --switch-bg-url: url(./assets/img/sun.svg); */
   --bg-flex-img-chat: url(./assets/img/chat_light.png);
   --bg-flex-img-flor: url(./assets/img/flor_light.png);
   --bg-flex-img-ajuda: url(./assets/img/ajuda_light.png);
@@ -38,28 +40,34 @@
   --text-family: "Boogaloo", cursive;
 }
 
-.light {
-  /*===========
-  Verificados
-  ===========*/
-  --text-family: 'Courier New', Courier, monospace;
+[data-theme="dark"] {
+  --bg-url: url(./assets/img/bg-desktop-dark.jpg);
+  --bg-menu: hsl(133, 41%, 55%);
+  --text-cabecalho: hsl(0, 0%, 100%);
+  --bg-botao: hsl(0, 0%, 100%);
+  --highlight-color: rgba(255, 255, 255, 0.595);
+  --bg-light-dark: rgb(0, 0, 255);
+  --text-p: hsl(132, 46%, 75%);
+  --sol-lua:rgb(0, 0, 255);
+  /*}
+
+ .light { */
   --text-color: hsl(133, 41%, 31%);
   --text-login: hsl(0, 0%, 100%);
   --text-white: hsl(0, 0%, 90%);
-  --bg-menu: hsl(133, 41%, 55%);
+  /* --bg-menu: hsl(133, 41%, 55%); */
   --bg-menu-hover: hsl(133, 41%, 31%);
   --bg-flex: hsl(133, 41%, 31%);
   --surface-menu: hsl(133, 41%, 55%);
   --surface-menu-houver: hsl(132, 6%, 85%);
-  --surface-color: rgba(255, 255, 255, 0.05);
-  --surface-color-houver: rgba(199, 169, 169, 0.5);
-  --stroke-color: rgba(255, 255, 255, 0.5);
-  --highlight-color: rgba(255, 255, 255, 0.2);
+  /* --surface-color: rgba(255, 255, 255, 0.05); */
+  /* --surface-color-houver: rgba(199, 169, 169, 0.5);
+  --stroke-color: rgba(255, 255, 255, 0.5); */
+  /* --highlight-color: rgba(255, 255, 255, 0.2); */
   --squares-color: hsl(133, 41%, 31%);
   --header-a-hover: hsl(133, 41%, 31%);
   --hero-p: hsl(47, 80%, 60%);
-  --bg-url: url(./assets/img/bg-desktop-dark.jpg);
-  --switch-bg-url: url(./assets/img/moon-stars.svg);
+  /* --switch-bg-url: url(./assets/img/moon-stars.svg); */
   --bg-flex-img-chat: url(./assets/img/chat_dark.png);
   --bg-flex-img-flor: url(./assets/img/flor_dark.png);
   --bg-flex-img-ajuda: url(./assets/img/ajuda_dark.png);
@@ -92,34 +100,43 @@ header {
   background-color: var(--bg-menu);
   width: 100%;
 }
-header > .container > .cabecalho > ul > li > a{
+
+header>.container>.cabecalho>ul>li>a {
   font-size: 2.5rem;
 }
 
-@media screen and (max-width: 990px){
-  header > .container > h1 {
+@media screen and (max-width: 990px) {
+  header>.container>h1 {
     font-size: 3rem;
   }
 }
-  
-@media screen and (max-width: 990px){
-header > .container > .cabecalho > ul > li > a{
-  font-size: 1.7rem;
-  letter-spacing: none;
+
+@media screen and (max-width: 990px) {
+  header>.container>.cabecalho>ul>li>a {
+    font-size: 1.7rem;
+    letter-spacing: none;
+  }
 }
- }
 
 header .container {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: 5%;
-  
 }
 
 header img {
   width: 45px;
   padding: 15px 0;
+}
+
+header h1 {
+  font-size: 5rem;
+  margin: 0.1em;
+  letter-spacing: 0.1rem;
+  color: var(--text-cabecalho);
+  text-align: center;
+  padding: 1.5rem;
 }
 
 header nav ul {
@@ -132,7 +149,7 @@ header nav ul li {
 
 header nav ul li a {
   text-decoration: none;
-  color: white;
+  color: var(--text-cabecalho);
   text-transform: uppercase;
   font-size: 1.8rem;
   padding: 2.4rem;
@@ -147,13 +164,13 @@ header nav ul li a:hover {
   width: 64px;
   position: relative;
   margin-left: 90%;
-  margin-top: 2%;
+  margin-top: 3%;
 }
 
 #switch button {
-  width: 32px;
-  height: 32px;
-  background: white var(--switch-bg-url) no-repeat center;
+  background-color: var(--bg-botao);
+  width: 60px;
+  height: 60px;
   border: 0;
   border-radius: 50%;
   position: absolute;
@@ -172,25 +189,16 @@ header nav ul li a:hover {
   animation: slide-in 0.4s forwards;
 }
 
-#switch span {
-  display: block;
-  width: 64px;
+svg {
+  color: var(--bg-light-dark);
+    /* stroke: var(--sol-lua); */
+  align-items: center;
+  justify-content: center;
+  width: 24px;
   height: 24px;
-  background: var(--surface-color);
-  border: 1px solid var(--stroke-color);
-  --webkit-backdrop-filter: blur(4px);
-  border-radius: 9999px;
 }
 
-h1 {
-  font-size: 5rem;
-  margin: 0.1em;
-  letter-spacing: 0.1rem;
-  /*espaçamento entre as letras*/
-  color: white;
-  text-align: center;
-  padding: 1.5rem;
-}
+
 
 /*=============== 
 HERO
@@ -280,7 +288,7 @@ Mensagens
   margin-top: -2vh;
   margin-bottom: 6vh;
   margin-left: 1vh;
-  
+
 }
 
 .iframe {
@@ -294,22 +302,22 @@ MAIN
 
 
 
-main >section#flex {
+main>section#flex {
   margin: auto;
   display: flex;
   flex-direction: row;
   margin-bottom: 10vw;
   margin-top: 1vw;
-  
+
 }
 
 @media screen and (max-width: 1390px) {
-main > section#flex{
-  display: flex;
-  margin: auto;
-  flex-direction: column;
-}
-  
+  main>section#flex {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+  }
+
 }
 
 
@@ -349,10 +357,10 @@ main .saude-mental p {
   color: var(--hero-p);
   font-size: 2rem;
   line-height: 3.2rem;
-  
+
 }
 
-main > .saude-mental {
+main>.saude-mental {
   font-size: 5rem;
   color: var(--text-login);
   text-align: center;
@@ -467,10 +475,11 @@ Flex
 Flex-apoio
 ==================*/
 
-.tratamentos > h2{
+.tratamentos>h2 {
   justify-content: center;
   text-align: center;
 }
+
 #flex-apoio {
   display: flex;
   list-style: none;
