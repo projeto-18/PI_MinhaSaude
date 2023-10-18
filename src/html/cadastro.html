@@ -18,13 +18,14 @@
     <header>
         <div class="container">
             <img src="../assets/img/Logo-light.png" alt="MinhaSaíde">
+            <h1>MinhaSaúde</h1>
             <div class="menu-section">
-                <div class="menu-toggle">
+                <!-- <div class="menu-toggle">
                     <div class="one"></div>
                     <div class="two"></div>
                     <div class="three"></div>
-                </div>
-                <nav>
+                </div> -->
+                <nav class="cabecalho">
                     <ul>
                         <li>
                             <a href="../index.html">Início</a>
@@ -46,15 +47,9 @@
             </div>
         </div>
     </header>
-    <section class="form-section">
-        <h1>MinhaSaúde</h1>
-        <div class="form-wrapper">
-            <div id="switch" onclick="toggleMode()">
-                <button></button>
-                <span></span>
-            </div>
-        </div>
-    </section>
+    <div id="switch" onclick="toggleMode()">
+        <button id="btn-dark-mode-toggle"></button>
+    </div>
     <main>
         <div id="fcon">
             <form action="#" method="post" autocomplete="off" id="form">
@@ -87,7 +82,9 @@
         </div>
     </main>
 
-
+    <footer>
+        <p>&copy; 2023 Sistema de auto ajuda MinhaSaúde. Todos os direitos reservados.</p>
+    </footer>
     <ul class="squares"></ul>
     <script src="../js/animacao.js"></script>
 </body>

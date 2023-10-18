@@ -6,74 +6,113 @@
 }
 
 :root {
+  --bg-url: url(../assets/img/bg-desktop-light.jpg);
+  --bg-menu: hsl(133, 41%, 31%);
+  --text-cabecalho: hsl(0, 0%, 100%);
+  --bg-botao: hsl(60, 100%, 50%);
+  --bg-light-dark: rgb(255, 0, 0);
+  --sol-lua: rgb(255, 0, 0);
+  --text-p: hsl(133, 41%, 31%);
   --text-color: hsl(133, 41%, 31%);
   --text-login: hsl(133, 41%, 31%);
-  --bg-menu: hsl(133, 41%, 31%);
+  --text-white: hsl(0, 0%, 90%);
   --bg-menu-hover: hsl(133, 41%, 55%);
-  --bg-url: url(../assets/img/bg-desktop-light.jpg);
-  --stroke-color: rgba(0, 0, 0, 0.5);
-  --surface-color: rgba(0, 0, 0, 0.05);
-  --surface-color-houver: rgba(135, 106, 106, 0.264);
   --surface-menu: hsl(133, 41%, 31%);
   --surface-menu-houver: hsl(133, 41%, 55%);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-houver: rgba(135, 106, 106, 0.264);
+  --stroke-color: rgba(0, 0, 0, 0.5);
   --highlight-color: rgba(0, 0, 0, 0.1);
-  --switch-bg-url: url(../assets/img/sun.svg);
   --squares-color: hsl(132, 46%, 75%);
+  --header-a-hover: hsl(133, 41%, 55%);
+  --hero-p: hsl(47, 80%, 40%);
 }
 
-.light {
-  --text-color: hsl(133, 41%, 31%);
-  --text-login: hsl(132, 6%, 85%);
+[data-theme="dark"] {
+  --bg-url: url(./assets/img/bg-desktop-dark.jpg);
   --bg-menu: hsl(133, 41%, 55%);
-  --br-menu-hover: hsl(133, 41%, 31%);
-  --bg-url: url(../assets/img/bg-desktop-dark.jpg);
-  --stroke-color: rgba(255, 255, 255, 0.5);
-  --surface-color: rgba(255, 255, 255, 0.05);
-  --surface-color-houver: rgba(199, 169, 169, 0.5);
+  --text-cabecalho: hsl(0, 0%, 100%);
+  --bg-botao: hsl(0, 0%, 100%);
+  --highlight-color: rgba(255, 255, 255, 0.595);
+  --bg-light-dark: rgb(0, 0, 255);
+  --text-p: hsl(132, 46%, 75%);
+  --sol-lua: rgb(0, 0, 255);
+  --text-color: hsl(133, 41%, 31%);
+  --text-login: hsl(0, 0%, 100%);
+  --text-white: hsl(0, 0%, 90%);
+  --bg-menu: hsl(133, 41%, 55%);
+  --bg-menu-hover: hsl(133, 41%, 31%);
   --surface-menu: hsl(133, 41%, 55%);
   --surface-menu-houver: hsl(132, 6%, 85%);
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --surface-color-houver: rgba(199, 169, 169, 0.5);
+  --stroke-color: rgba(255, 255, 255, 0.5);
   --highlight-color: rgba(255, 255, 255, 0.2);
-  --switch-bg-url: url(../assets/img/moon-stars.svg);
   --squares-color: hsl(133, 41%, 31%);
+  --header-a-hover: hsl(133, 41%, 31%);
+  --hero-p: hsl(47, 80%, 60%);
+  --bg-url: url(../assets/img/bg-desktop-dark.jpg);
+  --switch-bg-url: url(../assets/img/moon-stars.svg);
 }
 
 html {
   /* a cada 1rem será considera 10px */
   font-size: 62.5%;
+  background: var(--bg-url) no-repeat top center/cover;
 }
 
 html,
 body {
-  height: 100vh;
   font-family: "Boogaloo", cursive;
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
 }
 
 body {
-  background: var(--bg-url) no-repeat top center/cover;
   font-size: 1.6rem;
 }
 
 header {
   background-color: var(--bg-menu);
+  width: 100%;
+}
+
+header>.container>.cabecalho>ul>li>a {
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 990px) {
+  header>.container>h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  header>.container>.cabecalho>ul>li>a {
+    font-size: 1.7rem;
+    letter-spacing: none;
+  }
 }
 
 header .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-
-  width: 90%;
-  max-width: 980px;
-
-  margin: auto;
+  justify-content: center;
+  margin-left: 5%;
 }
 
 header img {
   width: 45px;
-  margin-left: 20px;
   padding: 15px 0;
+}
+
+header h1 {
+  font-size: 5rem;
+  margin: 0.1em;
+  letter-spacing: 0.1rem;
+  color: var(--text-cabecalho);
+  text-align: center;
+  padding: 1.5rem;
 }
 
 header nav ul {
@@ -86,9 +125,9 @@ header nav ul li {
 
 header nav ul li a {
   text-decoration: none;
-  color: white;
+  color: var(--text-cabecalho);
   text-transform: uppercase;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   padding: 2.4rem;
   transition: all 250ms linear 0s;
 }
@@ -97,24 +136,17 @@ header nav ul li a:hover {
   background: rgba(255, 255, 255, 0.15);
 }
 
-h1 {
-  font-size: 5rem;
-  letter-spacing: 0.1rem; /*espaçamento entre as letras*/
-  color: var(--text-login);
-  text-align: center;
-  padding: 1.5rem;
-}
-
 #switch {
   width: 64px;
   position: relative;
-  margin: 4px auto;
+  margin-left: 90%;
+  margin-top: 3%;
 }
 
 #switch button {
-  width: 32px;
-  height: 32px;
-  background: white var(--switch-bg-url) no-repeat center;
+  background-color: var(--bg-botao);
+  width: 60px;
+  height: 60px;
   border: 0;
   border-radius: 50%;
   position: absolute;
@@ -133,14 +165,13 @@ h1 {
   animation: slide-in 0.4s forwards;
 }
 
-#switch span {
-  display: block;
-  width: 64px;
+svg {
+  color: var(--bg-light-dark);
+  /* stroke: var(--sol-lua); */
+  align-items: center;
+  justify-content: center;
+  width: 24px;
   height: 24px;
-  background: var(--surface-color);
-  border: 1px solid var(--stroke-color);
-  --webkit-backdrop-filter: blur(4px);
-  border-radius: 9999px;
 }
 
 h2 {
