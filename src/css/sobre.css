@@ -83,14 +83,16 @@ header>.container>.cabecalho>ul>li>a {
 
 @media screen and (max-width: 990px) {
   header>.container>h1 {
-    font-size: 3rem;
+    font-size: 2rem;
+    margin-left: 0vw;
   }
 }
 
 @media screen and (max-width: 990px) {
-  header>.container>.cabecalho>ul>li>a {
-    font-size: 1.7rem;
+  header > .container  a {
+    font-size: 1.8rem;
     letter-spacing: none;
+    padding: 1rem;
   }
 }
 
@@ -141,6 +143,28 @@ header nav ul li a:hover {
   position: relative;
   margin-left: 90%;
   margin-top: 3%;
+}
+
+@media screen and (max-width: 1900px) {
+  #switch {
+    margin-top: 3vw;
+  }
+  
+}
+
+@media screen and (max-width: 1500px) {
+  #switch {
+    margin-top: 6vw;
+  }
+  
+}
+
+@media screen and (max-width: 900px) {
+  #switch {
+    margin-left: 80vw;
+    margin-top: 8vw;
+  }
+  
 }
 
 #switch button {

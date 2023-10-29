@@ -128,7 +128,7 @@ header nav ul li a {
   color: var(--text-cabecalho);
   text-transform: uppercase;
   font-size: 1.8rem;
-  padding: 2.4rem;
+  padding: 2rem;
   transition: all 250ms linear 0s;
 }
 
@@ -136,11 +136,48 @@ header nav ul li a:hover {
   background: rgba(255, 255, 255, 0.15);
 }
 
+@media screen and (max-width: 990px) {
+  header>.container>h1 {
+    font-size: 2rem;
+    margin-left: 0vw;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  header > .container  a {
+    font-size: 1.8rem;
+    letter-spacing: none;
+    padding: 1rem;
+  }
+}
+
 #switch {
   width: 64px;
   position: relative;
   margin-left: 90%;
   margin-top: 3%;
+}
+
+@media screen and (max-width: 1900px) {
+  #switch {
+    margin-top: 3vw;
+  }
+  
+}
+
+@media screen and (max-width: 1500px) {
+  #switch {
+    margin-top: 6vw;
+  }
+  
+}
+
+@media screen and (max-width: 900px) {
+  #switch {
+    margin-left: 80vw;
+    margin-top: 8vw;
+  }
+  
 }
 
 #switch button {
@@ -195,6 +232,14 @@ svg {
   font-style: italic;
 }
 
+.chatbot-response {
+  margin-bottom: 10px; /* Define a margem inferior para criar uma quebra de linha entre as respostas do chatbot */
+}
+
+/* Define a cor do texto como preto para o chatbot */
+.chatbot-response {
+  color: black;
+}
 #user-input {
   width: 70%;
   padding: 5px;
