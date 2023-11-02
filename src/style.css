@@ -688,8 +688,7 @@ Flex-apoio
 
 @media screen and (max-width: 990px){
   #flex-apoio2{
-    margin-top: 5vw;
-    margin-bottom: 0vw;
+    margin-top: -5vw;
   }
 }
 
@@ -738,8 +737,8 @@ Flex-apoio
 @media screen and (max-width: 990px) {
   .flex-container-presente{
     width: 320px;
-    height:260px;
-    margin-bottom: -19vh;
+    height:230px;
+    margin-bottom: -10vw;
   }
 }
 
@@ -842,7 +841,7 @@ Flex compartilhe
   gap: 2rem;
   align-items: center;
   justify-content: center;
-  margin-top: -20vh;
+  margin-top: -5vh;
 }
 
 .compartilhe h2 {
