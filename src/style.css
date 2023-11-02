@@ -88,33 +88,53 @@ body {
 
 header {
   background-color: var(--bg-menu);
-  width: 100%;
+  
 }
 
-header > .container > .cabecalho > ul > li > a {
+header > .container > .nav  {
   font-size: 2rem;
 }
 
 @media screen and (max-width: 990px) {
-  header>.container>h1 {
-    font-size: 2.6rem;
-    margin-left: 0vw;
+  header > .nav   {
+    font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 990px) {
-  header > .container  a {
-    font-size: 1.8rem;
-    letter-spacing: none;
-    padding: 5px;
+  header > .container > .nav   {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
   }
 }
+
+@media screen and (max-width: 500px) {
+  header > .container   {
+    display: flex;
+    margin-right: -55vw;
+    
+  }
+}
+
+
+
+@media screen and (max-width: 990px) {
+  header > .container > h1 {
+    font-size: 1.8rem;
+    
+  }
+}
+
+
 
 header .container {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 5%;
+  
 }
 
 header img {
@@ -133,24 +153,25 @@ header h1 {
   padding: 1.5rem;
 }
 
-header nav ul {
+header .nav ul {
   display: flex;
+  padding: 15px;
 }
 
-header nav ul li {
+header .nav ul li {
   list-style: none;
 }
 
-header nav ul li a {
+header .nav ul li a {
   text-decoration: none;
   color: var(--text-cabecalho);
   text-transform: uppercase;
-  font-size: 1.8rem;
-  padding: 2.4rem;
+  
+  padding: 5px;
   transition: all 250ms linear 0s;
 }
 
-header nav ul li a:hover {
+header .nav ul li a:hover {
   background: rgba(255, 255, 255, 0.15);
 }
 
@@ -366,23 +387,51 @@ main > h2 {
   text-align: center;
   margin-top: -2vw;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 990px) {
   main > .saude-mental > h2{
-    font-size:  4rem;
+    font-size:  3rem;
     
   }
 }
+ /*estilo abaixo de dicas para cuidar ... */
 
-main .saude-mental .cabecalho {
-  font-size: 5rem;
-  color: var(--text-login);
-  text-align: center;
+ main > #flex > .chat > .flex-container-chat >
+.flex-item-chat > p {
+  font-size: 1.4rem;
+
+ }
+
+ main > #flex > .chat > .flex-container-chat >
+.flex-item-chat > h2 {
+  font-size: 2.8rem;
+
+ }
+
+ main > #flex > .flor > .flex-container-flor > .flex-item-flor >
+p {
+  font-size: 1.4rem;
+
+ }
+
+ main > #flex > .flor > .flex-container-flor > .flex-item-flor >
+ h2 {
+   font-size: 2.8rem;
+  }
+
+main > #flex > .ajuda > .flex-container-ajuda > .flex-item-ajuda
+> p {
+  font-size: 1.4rem;
 }
 
-main .saude-mental .texto {
+main > #flex > .ajuda > .flex-container-ajuda > .flex-item-ajuda
+> h2 {
+  font-size: 2.8rem;
+}
+
+
+main .saude-mental  {
   font-size: 3rem;
   letter-spacing: 0.1rem;
-  /*espaçamento entre as letras*/
   color: var(--hero-p);
   text-align: center;
 }
@@ -404,7 +453,52 @@ main .saude-mental p {
 
 }
 
-main>.saude-mental {
+.saude-mental2 > h2{
+  font-size: 4rem;
+  margin-bottom: 2vw;
+}
+
+#flex-apoio > .presente > .flex-container-presente > 
+.flex-item-presente > p {
+  font-size: 1.4rem;
+}
+
+#flex-apoio > .presente > .flex-container-presente > 
+.flex-item-presente > h2 {
+  font-size: 2.8rem;
+}
+
+#flex-apoio > .reconhecer > 
+.flex-container-reconhecer > .flex-item-reconhecer > p {
+  font-size: 1.4rem;
+} 
+
+#flex-apoio > .reconhecer > 
+.flex-container-reconhecer > .flex-item-reconhecer > h2 {
+  font-size: 2.8rem;
+} 
+
+#flex-apoio2 > .julgamento
+ > .flex-container-julgamento > .flex-item-julgamento > p {
+  font-size: 1.4rem;
+ }
+
+ #flex-apoio2 > .julgamento
+ > .flex-container-julgamento > .flex-item-julgamento > h2 {
+  font-size: 2.8rem;
+ }
+
+#flex-apoio2 > .reduza >
+ .flex-container-reduza > .flex-item-reduza > p {
+  font-size: 1.4rem;
+ }
+
+ #flex-apoio2 > .reduza >
+ .flex-container-reduza > .flex-item-reduza > h2 {
+  font-size: 2.8rem;
+ }
+
+main > .saude-mental {
   font-size: 5rem;
   color: var(--text-login);
   text-align: center;
@@ -475,7 +569,7 @@ Flex
   flex-flow: row wrap;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 990px) {
   .flex-container-chat{
     width: 350px;
     height: 230px;
@@ -485,7 +579,7 @@ Flex
   
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 990px) {
   .flex-container-flor{
     width: 350px;
     height: 230px;
@@ -495,7 +589,7 @@ Flex
   
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 990px) {
   .flex-container-ajuda{
     width: 350px;
     height: 230px;
@@ -589,13 +683,13 @@ Flex-apoio
   gap: 2rem;
   align-items: center;
   justify-content: center;
-  margin: 0px;
+  margin-bottom: 10vw;
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 990px){
   #flex-apoio2{
     margin-top: 5vw;
-    margin-bottom: 20vw;
+    margin-bottom: 0vw;
   }
 }
 
@@ -641,15 +735,15 @@ Flex-apoio
   padding: 0.5rem;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 990px) {
   .flex-container-presente{
     width: 320px;
-    height: 160px;
-    margin-bottom: -3vh;
+    height:260px;
+    margin-bottom: -19vh;
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 990px) {
   .flex-container-reconhecer{
     width: 320px;
     height: 160px;
@@ -670,7 +764,7 @@ Flex-apoio
   .flex-container-julgamento{
     width: 320px;
     height: 160px;
-    margin-bottom: -3vh;
+    margin-bottom: 8vh;
     
   }
 }
@@ -679,7 +773,7 @@ Flex-apoio
   .flex-container-reduza{ 
     width: 320px;
     height: 160px;
-    margin-bottom: -3vh;
+    margin-bottom: 8vh;
   }
 }
 
@@ -748,12 +842,12 @@ Flex compartilhe
   gap: 2rem;
   align-items: center;
   justify-content: center;
-  margin-top: 1vh;
+  margin-top: -20vh;
 }
 
 .compartilhe h2 {
   font-family: var(--text-family);
-  font-size: 3.5rem;
+  font-size: 2.8rem;
   font: bold;
   font-style: italic;
   color: var(--text-login);
@@ -762,7 +856,7 @@ Flex compartilhe
 
 .compartilhe p {
   font-family: var(--text-family);
-  font-size: 2rem;
+  font-size: 1.4rem;
   color: var(--hero-p);
   /* color: var(--text-login); */
   font-style: italic;
@@ -835,21 +929,21 @@ tratamento
 
 .tratamentos h2 {
   color: var(--bg-menu);
-  font-size: 5rem;
+  font-size: 3.5rem;
   padding: 1rem;
 }
 
 .tratamentos h3 {
   font-family: var(--text-family);
-  font-size: 2.8rem;
+  font-size: 3rem;
   text-align: center;
   color: var(--hero-p);
   font-style: italic;
   padding: 1rem;
 }
 
-p {
-  font-size: 2.2rem;
+.tratamentos  p {
+  font-size: 1.8rem;
   text-align: center;
   color: var(--bg-menu);
   font-style: italic;
