@@ -141,11 +141,12 @@ header nav ul li a:hover {
 #switch {
     width: 64px;
     position: relative;
-    margin-left: 90%;
-    margin-top: 3%;
-}
-
-@media screen and (max-width: 1900px) {
+    margin-left: 75vw;
+    margin-top: 4vw;
+  }
+  
+  
+  @media screen and (max-width: 1900px) {
     #switch {
       margin-top: 3vw;
     }
@@ -347,6 +348,7 @@ footer {
     margin: -100px auto 0px;
     padding: 10rem;
     text-align: center;
+    margin-top: 700px;
 }
 
 footer p {

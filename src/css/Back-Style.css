@@ -125,7 +125,31 @@ h1 {
 #switch {
   width: 64px;
   position: relative;
-  margin: 4px auto;
+  margin-left: 75vw;
+  margin-top: 4vw;
+}
+
+
+@media screen and (max-width: 1900px) {
+  #switch {
+    margin-top: 3vw;
+  }
+  
+}
+
+@media screen and (max-width: 1500px) {
+  #switch {
+    margin-top: 6vw;
+  }
+  
+}
+
+@media screen and (max-width: 900px) {
+  #switch {
+    margin-left: 80vw;
+    margin-top: 8vw;
+  }
+  
 }
 
 #switch button {

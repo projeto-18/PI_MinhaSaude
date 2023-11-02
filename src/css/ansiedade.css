@@ -70,17 +70,34 @@ body {
 
 header {
     background-color: var(--bg-menu);
+    width: 100%;
 }
+
+header > .container > .cabecalho > ul > li > a {
+    font-size: 2rem;
+  }
+  
+  @media screen and (max-width: 990px) {
+    header>.container>h1 {
+      font-size: 2.6rem;
+      margin-left: 0vw;
+    }
+  }
+  
+  @media screen and (max-width: 990px) {
+    header > .container  a {
+      font-size: 1.8rem;
+      letter-spacing: none;
+      padding: 15px;
+    }
+  }
 
 header .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
-    width: 90%;
-    max-width: 980px;
-
-    margin: auto;
+    justify-content: center;
+    margin-left: 5%;
+    
 }
 
 header img {
@@ -113,8 +130,32 @@ header nav ul li a:hover {
 #switch {
     width: 64px;
     position: relative;
-    margin: 4px auto;
-}
+    margin-left: 75vw;
+    margin-top: 4vw;
+  }
+  
+  
+  @media screen and (max-width: 1900px) {
+    #switch {
+      margin-top: 3vw;
+    }
+    
+  }
+  
+  @media screen and (max-width: 1500px) {
+    #switch {
+      margin-top: 6vw;
+    }
+    
+  }
+  
+  @media screen and (max-width: 900px) {
+    #switch {
+      margin-left: 80vw;
+      margin-top: 8vw;
+    }
+    
+  }
 
 #switch button {
     width: 32px;
@@ -190,6 +231,7 @@ footer {
     margin: 100px auto 0px;
     padding: 1.5rem;
     text-align: center;
+    margin-top: 600px;
 }
 
 footer p {

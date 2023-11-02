@@ -91,7 +91,7 @@ header {
   width: 100%;
 }
 
-header>.container>.cabecalho>ul>li>a {
+header > .container > .cabecalho > ul > li > a {
   font-size: 2rem;
 }
 

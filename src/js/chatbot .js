@@ -52,7 +52,11 @@ function appendMessage(sender, message) {
     if (sender === 'Chatbot') {
         // Adicione um estilo CSS para a cor preta ao texto do chatbot
         messageElement.style.color = 'black';
+    } else {
+        // Defina a cor padrão para as mensagens do usuário
+        messageElement.style.color = 'blue'; // ou qualquer outra cor de sua escolha
     }
+    
 
     chatLog.appendChild(messageElement);
 }
@@ -70,6 +74,16 @@ document.addEventListener('DOMContentLoaded', function() {
     
     sendButton.addEventListener('click', sendMessage);
 
+    function appendMessage(sender, message) {
+        const messageElement = document.createElement('div');
+        messageElement.innerHTML = `<strong style="color: ${sender === 'Você' ? 'black' : 'white'}">${sender}</strong>: ${message}`;
+        
+        if (sender === 'Chatbot') {
+            messageElement.classList.add('chatbot-response');
+        }
+        
+        chatLog.appendChild(messageElement);
+    }
     
 
 
@@ -121,22 +135,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     
 
-function appendMessage(sender, message) {
-    const messageElement = document.createElement('div');
-    messageElement.innerHTML = `<strong>${sender}</strong>: ${message}`;
 
-    if (sender === 'Chatbot') {
-        // Adicione um estilo CSS para a cor preta ao texto do chatbot
-        messageElement.style.color = 'black';
-    }
-
-    // Adicione uma classe CSS para separar as respostas do chatbot por uma linha em branco
-    if (sender === 'Chatbot') {
-        messageElement.classList.add('chatbot-response');
-    }
-
-    chatLog.appendChild(messageElement);
-}
 
 
 
