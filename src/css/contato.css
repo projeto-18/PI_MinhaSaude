@@ -89,7 +89,7 @@ header>.container>.cabecalho>ul>li>a {
 }
 
 @media screen and (max-width: 990px) {
-  header > .container  a {
+  header > .container  nav {
     font-size: 1.8rem;
     letter-spacing: none;
     padding: 5px;
@@ -202,9 +202,9 @@ svg {
 
 
  .container2 {
-  background: var(--bg-menu);
+  color: var(--text-login);
   width: 800px;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: auto;
   margin-top: 12vw;
   padding: 2.4rem;
@@ -213,6 +213,10 @@ svg {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+
+.container2 > h2 {
+  font-size: 3rem;
 }
 
 @media screen and (max-width: 900px) {

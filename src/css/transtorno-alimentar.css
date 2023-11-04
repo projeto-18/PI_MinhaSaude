@@ -157,10 +157,39 @@ header nav ul li a:hover {
     
   }
 
-#switch button {
-    width: 32px;
-    height: 32px;
-    background: white var(--switch-bg-url) no-repeat center;
+  #switch {
+    width: 64px;
+    position: relative;
+    margin-left: 75vw;
+    margin-top: 4vw;
+  }
+  
+  @media screen and (max-width: 1900px) {
+    #switch {
+      margin-top: 3vw;
+    }
+    
+  }
+  
+  @media screen and (max-width: 1500px) {
+    #switch {
+      margin-top: 6vw;
+    }
+    
+  }
+  
+  @media screen and (max-width: 900px) {
+    #switch {
+      margin-left: 80vw;
+      margin-top: 8vw;
+    }
+    
+  }
+  
+  #switch button {
+    background-color: var(--bg-botao);
+    width: 60px;
+    height: 60px;
     border: 0;
     border-radius: 50%;
     position: absolute;
@@ -169,25 +198,24 @@ header nav ul li a:hover {
     z-index: 1;
     transform: translateY(-50%);
     animation: slide-back 0.2s;
-}
-
-#switch button:hover {
+  }
+  
+  #switch button:hover {
     outline: 8px solid var(--highlight-color);
-}
-
-.light #switch button {
+  }
+  
+  .light #switch button {
     animation: slide-in 0.4s forwards;
-}
-
-#switch span {
-    display: block;
-    width: 64px;
+  }
+  
+  svg {
+    color: var(--bg-light-dark);
+      /* stroke: var(--sol-lua); */
+    align-items: center;
+    justify-content: center;
+    width: 24px;
     height: 24px;
-    background: var(--surface-color);
-    border: 1px solid var(--stroke-color);
-    --webkit-backdrop-filter: blur(4px);
-    border-radius: 9999px;
-}
+  }
 
 h1 {
     font-size: 5rem;

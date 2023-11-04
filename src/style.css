@@ -102,8 +102,8 @@ header > .container > .nav  {
 }
 
 @media screen and (max-width: 990px) {
-  header > .container > .nav   {
-    font-size: 1rem;
+  header > .container > .nav > a   {
+    font-size: 1.8rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -123,7 +123,7 @@ header > .container > .nav  {
 
 @media screen and (max-width: 990px) {
   header > .container > h1 {
-    font-size: 1.8rem;
+    font-size: 3rem;
     
   }
 }
@@ -256,7 +256,7 @@ Intensidade
 }
 @media screen and (max-width: 1200px) {
   .humor{
-    margin-top: 1vh;
+    margin-top: 2vh;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -345,7 +345,7 @@ Mensagens
     border-radius: 5%;
     margin-top: 8vh;
     margin-bottom: -2vh;
-    margin-left: 16vh;
+    margin-left: 21vh;
   }
    }
 
@@ -389,7 +389,7 @@ main > h2 {
 }
 @media screen and (max-width: 990px) {
   main > .saude-mental > h2{
-    font-size:  3rem;
+    font-size:  4rem;
     
   }
 }
@@ -397,36 +397,87 @@ main > h2 {
 
  main > #flex > .chat > .flex-container-chat >
 .flex-item-chat > p {
-  font-size: 1.4rem;
+  font-size: 2.1rem;
 
+ }
+
+ @media screen and (max-width: 990px) {
+  main > #flex > .chat > .flex-container-chat >
+.flex-item-chat > p {
+  font-size: 2.1rem;
+}
+  
  }
 
  main > #flex > .chat > .flex-container-chat >
 .flex-item-chat > h2 {
-  font-size: 2.8rem;
+  font-size: 4rem;
 
  }
 
+ @media screen and (max-width: 990px) {
+  main > #flex > .chat > .flex-container-chat >
+.flex-item-chat > h2 {
+  font-size: 3rem;
+ 
+}
+  
+ }
+
+ 
+
  main > #flex > .flor > .flex-container-flor > .flex-item-flor >
 p {
-  font-size: 1.4rem;
+  font-size: 2.3rem;
 
+ }
+
+ @media screen and (max-width: 990px) {
+  main > #flex > .flor > .flex-container-flor >
+  .flex-item-flor > p {
+    font-size: 2.1;
+  }
+  
+  
  }
 
  main > #flex > .flor > .flex-container-flor > .flex-item-flor >
  h2 {
-   font-size: 2.8rem;
+   font-size: 4rem;
   }
+
+  @media screen and (max-width: 990px) {
+    main > #flex > .flor > .flex-container-flor >
+    .flex-item-flor > h2 {
+      font-size: 3rem;
+    }
+  }
+
 
 main > #flex > .ajuda > .flex-container-ajuda > .flex-item-ajuda
 > p {
-  font-size: 1.4rem;
+  font-size: 2.3rem;
+}
+
+@media screen and (max-width: 990px) {
+  main > #flex > .ajuda > .flex-container-ajuda > .flex-item-ajuda
+> p {
+    font-size: 2.1;
+  }
 }
 
 main > #flex > .ajuda > .flex-container-ajuda > .flex-item-ajuda
 > h2 {
-  font-size: 2.8rem;
+  font-size: 4rem;
 }
+
+@media screen and (max-width: 990px) {
+  main > #flex > .ajuda > .flex-container-ajuda > .flex-item-ajuda
+> h2 {
+  font-size: 3rem;
+  }
+}
+
 
 
 main .saude-mental  {
@@ -460,43 +511,123 @@ main .saude-mental p {
 
 #flex-apoio > .presente > .flex-container-presente > 
 .flex-item-presente > p {
-  font-size: 1.4rem;
+  font-size: 2.3rem;
+}
+
+@media screen and (max-width: 990px) {
+  #flex-apoio > .presente > .flex-container-presente > 
+.flex-item-presente > p {
+    font-size: 2.1rem ;
+  }
+  
 }
 
 #flex-apoio > .presente > .flex-container-presente > 
 .flex-item-presente > h2 {
-  font-size: 2.8rem;
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 990px) {
+  #flex-apoio > .presente > .flex-container-presente > 
+.flex-item-presente > h2 {
+    font-size: 3rem ;
+  }
+  
+}
+
+@media screen and (max-width: 990px) {
+  #flex-apoio > .presente > .flex-container-presente {
+    margin-bottom: 5px;
+  }
+  
 }
 
 #flex-apoio > .reconhecer > 
 .flex-container-reconhecer > .flex-item-reconhecer > p {
-  font-size: 1.4rem;
+  font-size: 2.2rem;
+  
 } 
+
+@media screen and (max-width: 990px) {
+  #flex-apoio > .reconhecer > 
+.flex-container-reconhecer > .flex-item-reconhecer > p {
+  font-size: 2.1rem ;
+}
+  
+}
 
 #flex-apoio > .reconhecer > 
 .flex-container-reconhecer > .flex-item-reconhecer > h2 {
-  font-size: 2.8rem;
+  font-size: 4rem;
 } 
+
+@media screen and (max-width: 990px) {
+  #flex-apoio > .reconhecer > 
+.flex-container-reconhecer > .flex-item-reconhecer > h2 {
+  font-size: 3rem ;
+}
+  
+}
+
+@media screen and (max-width: 990px) {
+  #flex-apoio > .reconhecer > 
+.flex-container-reconhecer  {
+  margin-bottom: 5px;
+  
+}
+  
+}
 
 #flex-apoio2 > .julgamento
  > .flex-container-julgamento > .flex-item-julgamento > p {
-  font-size: 1.4rem;
+  font-size: 2.3rem;
+  
  }
+
+ @media screen and (max-width: 990px) {
+  #flex-apoio2 > .julgamento
+ > .flex-container-julgamento > .flex-item-julgamento > p {
+  font-size: 2.1rem ;
+}
+  
+}
 
  #flex-apoio2 > .julgamento
  > .flex-container-julgamento > .flex-item-julgamento > h2 {
-  font-size: 2.8rem;
+  font-size: 4rem;
  }
+
+ @media screen and (max-width: 990px) {
+  #flex-apoio2 > .julgamento
+ > .flex-container-julgamento > .flex-item-julgamento > h2 {
+  font-size: 3rem ;
+}
+}
 
 #flex-apoio2 > .reduza >
  .flex-container-reduza > .flex-item-reduza > p {
-  font-size: 1.4rem;
+  font-size: 2.3rem;
+  
  }
+
+ @media screen and (max-width: 990px) {
+  #flex-apoio2 > .reduza >
+ .flex-container-reduza > .flex-item-reduza > p {
+  font-size: 2.1rem ;
+}
+}
 
  #flex-apoio2 > .reduza >
  .flex-container-reduza > .flex-item-reduza > h2 {
-  font-size: 2.8rem;
+  font-size: 4rem;
  }
+
+ @media screen and (max-width: 990px) {
+  #flex-apoio2 > .reduza >
+ .flex-container-reduza > .flex-item-reduza > h2 {
+  font-size: 3rem ;
+}
+}
 
 main > .saude-mental {
   font-size: 5rem;
@@ -643,7 +774,7 @@ Flex
 Flex-apoio
 ==================*/
 
-.tratamentos>h2 {
+.tratamentos > h2 {
   justify-content: center;
   text-align: center;
 }
@@ -666,7 +797,7 @@ Flex-apoio
 @media screen and (max-width: 1200px){
   #flex-apoio{
     margin-top: 5vw;
-    margin-bottom: 20vw;
+    margin-bottom: 12vw;
   }
 }
 
@@ -737,8 +868,8 @@ Flex-apoio
 @media screen and (max-width: 990px) {
   .flex-container-presente{
     width: 320px;
-    height:230px;
-    margin-bottom: -10vw;
+    height: 160px;
+    margin-bottom: -6vw;
   }
 }
 
@@ -747,19 +878,20 @@ Flex-apoio
     width: 320px;
     height: 160px;
     margin-bottom: -4vh;
+    font-size: 6rem;
     
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .reconhecer h2{
-    font-size: 3.2rem;
+@media screen and (max-width: 990px) {
+  .flex-item-reconhecer > h2{
+    font-size: 6rem;
     
     
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 990px) {
   .flex-container-julgamento{
     width: 320px;
     height: 160px;
@@ -768,7 +900,7 @@ Flex-apoio
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 990px) {
   .flex-container-reduza{ 
     width: 320px;
     height: 160px;
@@ -846,7 +978,7 @@ Flex compartilhe
 
 .compartilhe h2 {
   font-family: var(--text-family);
-  font-size: 2.8rem;
+  font-size: 4rem;
   font: bold;
   font-style: italic;
   color: var(--text-login);
@@ -855,7 +987,7 @@ Flex compartilhe
 
 .compartilhe p {
   font-family: var(--text-family);
-  font-size: 1.4rem;
+  font-size: 3rem;
   color: var(--hero-p);
   /* color: var(--text-login); */
   font-style: italic;
@@ -928,7 +1060,7 @@ tratamento
 
 .tratamentos h2 {
   color: var(--bg-menu);
-  font-size: 3.5rem;
+  font-size: 4rem;
   padding: 1rem;
 }
 
@@ -942,7 +1074,7 @@ tratamento
 }
 
 .tratamentos  p {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   text-align: center;
   color: var(--bg-menu);
   font-style: italic;
@@ -965,6 +1097,7 @@ tratamento
 }
 
 .menu-pills a {
+  font-size: 2rem;
   display: inline-block !important;
   font-weight: 600;
   letter-spacing: .02em;
