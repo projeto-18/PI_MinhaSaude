@@ -18,7 +18,15 @@ O frontend é a parte do aplicativo com a qual os usuários interagem. Para um M
 
 3.	script.js: O arquivo JavaScript que conterá a lógica do frontend.
 ## Páginas e Componentes:
-1.	Página Principal: Permitirá o usuário acessa a página inicial do aplicativo MinhaSaúde no frontend.
+1.	A partir do Index.html teremos acessos as páginas auxiliares, através do Menu na parte superior e os atalhos localizados na parte inferior, conforme descrito abaixo:
+    ### MENU SUPERIOR
+    #### a. CHATBOT - Tela destinada para que os usuários tirem suas dúvidas através das opções fornecidas pela página.
+    #### b.SOBRE – Tela informativa referente ao trabalho do Projeto Integrador, contendo uma breve descrição do tema e nome dos participantes do grupo.
+    #### c.CONTATO – Tela informativa para que os usuários entrem em contato através de e-mail.
+    #### d.CADASTRO – Tema onde os usuários podem informar seus dados para futuras atualizações do sistema, onde estão em estudos a forma de envio de informativos e outros benefícios.
+    ### Os atalhos inferiores têm como objetivo dar uma breve explicação de cada síndrome, doença ou distúrbio mental, são elas:
+    #### Ansiedade, acidente vascular cerebral, demência, depressão, doença de alzheimer, doença de Parkinson, esquizofrenia, fobia, o que é ideação suicida, psicose, transtorno do pânico, transtorno alimentar, transtorno bipolar, transtorno borderline e transtorno de personalidade.
+
 
 ## Bibliotecas e Frameworks:
 4.	HTML, CSS: Para estruturar e estilizar as páginas.
@@ -26,17 +34,15 @@ O frontend é a parte do aplicativo com a qual os usuários interagem. Para um M
 5.	JavaScript: Para interatividade e manipulação.
 #
 # Backend:
-O backend será desenvolvido em Java e será responsável por processar solicitações do frontend e fornecer respostas adequadas.
+O backend é desenvolvido em Java e é responsável por processar solicitações do frontend e fornecer respostas adequadas.
 
 ## Estrutura de Pastas e Arquivos:
 - src: Código-fonte do aplicativo.
 
 - assets: Recursos gráficos.
-- components: Componentes Vue reutilizáveis.
-- views: Páginas Vue para diferentes seções do aplicativo.
-- router: Configuração de roteamento.
-- store: Gerenciamento de estado (usando Vuex).
-- services: Comunicação com os serviços de backend.
+- CSS: Recursos de estilização das paginas de HTML.
+- HTML: Desenvolvimentos das paginas do aplicativo web.
+- JS: interatividade e manipulação das paginas e efeitos em JavaScript.
 
 # Exemplo de Fluxo de Funcionamento:
 
