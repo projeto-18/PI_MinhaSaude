@@ -21,9 +21,9 @@ O frontend é a parte do aplicativo com a qual os usuários interagem. Para um M
 1.	A partir do Index.html teremos acessos as páginas auxiliares, através do Menu na parte superior e os atalhos localizados na parte inferior, conforme descrito abaixo:
     ### MENU SUPERIOR
     #### a. CHATBOT - Tela destinada para que os usuários tirem suas dúvidas através das opções fornecidas pela página.
-    #### b.SOBRE – Tela informativa referente ao trabalho do Projeto Integrador, contendo uma breve descrição do tema e nome dos participantes do grupo.
-    #### c.CONTATO – Tela informativa para que os usuários entrem em contato através de e-mail.
-    #### d.CADASTRO – Tema onde os usuários podem informar seus dados para futuras atualizações do sistema, onde estão em estudos a forma de envio de informativos e outros benefícios.
+    #### b. SOBRE – Tela informativa referente ao trabalho do Projeto Integrador, contendo uma breve descrição do tema e nome dos participantes do grupo.
+    #### c. CONTATO – Tela informativa para que os usuários entrem em contato através de e-mail.
+    #### d. CADASTRO – Tema onde os usuários podem informar seus dados para futuras atualizações do sistema, onde estão em estudos a forma de envio de informativos e outros benefícios.
     ### Os atalhos inferiores têm como objetivo dar uma breve explicação de cada síndrome, doença ou distúrbio mental, são elas:
     #### Ansiedade, acidente vascular cerebral, demência, depressão, doença de alzheimer, doença de Parkinson, esquizofrenia, fobia, o que é ideação suicida, psicose, transtorno do pânico, transtorno alimentar, transtorno bipolar, transtorno borderline e transtorno de personalidade.
 
