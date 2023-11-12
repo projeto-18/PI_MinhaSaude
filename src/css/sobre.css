@@ -130,7 +130,7 @@ header nav ul li a {
   color: var(--text-cabecalho);
   text-transform: uppercase;
   font-size: 1.8rem;
-  padding: 2.4rem;
+  padding: 5px;
   transition: all 250ms linear 0s;
 }
 
@@ -261,10 +261,10 @@ h4 {
 
 footer {
   font-size: 1.8rem;
-  margin: 0px auto 0px;
+  margin: 100px auto 0px;
   padding: 10px;
   text-align: center;
-  margin-top: 540px;
+  
 }
 
 footer p {

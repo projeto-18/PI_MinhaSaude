@@ -224,13 +224,14 @@ p {
 /*=============== 
 footer
 ==================*/
-footer {
-    font-size: 1.8rem;
-    margin: 100px auto 0px;
-    padding: 1.5rem;
-    text-align: center;
-    margin-top: 600px;
+.form-section footer {
+  font-size: 1.8rem;
+  margin: 100px auto 0px;
+  padding: 1.5rem;
+  text-align: center;
+  
 }
+
 
 footer p {
     color: var(--text-login);

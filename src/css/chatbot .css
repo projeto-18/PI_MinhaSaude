@@ -128,7 +128,7 @@ header nav ul li a {
   color: var(--text-cabecalho);
   text-transform: uppercase;
   font-size: 1.8rem;
-  padding: 2rem;
+  padding: 5px;
   transition: all 250ms linear 0s;
 }
 
@@ -255,7 +255,7 @@ footer {
   margin: 100px auto 0px;
   padding: 1.5rem;
   text-align: center;
-  margin-top: 700px;
+  
 }
 
 footer p {

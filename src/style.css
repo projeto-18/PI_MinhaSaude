@@ -155,7 +155,7 @@ header h1 {
 
 header .nav ul {
   display: flex;
-  padding: 15px;
+  padding: 5px;
 }
 
 header .nav ul li {
@@ -903,7 +903,7 @@ Flex-apoio
 @media screen and (max-width: 990px) {
   .flex-container-reduza{ 
     width: 320px;
-    height: 160px;
+    height: 180px;
     margin-bottom: 8vh;
   }
 }
@@ -956,6 +956,7 @@ Flex-apoio
   background-repeat: no-repeat;
   display: block;
   align-items: center;
+  height: 200px;
 }
 
 /*=============== 
@@ -1037,7 +1038,7 @@ footer
 ==================*/
 footer {
   font-size: 1.8rem;
-  margin: 100px auto 0px;
+  margin: 1px auto 0px;
   padding: 1.5rem;
   text-align: center;
 }
