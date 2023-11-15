@@ -122,10 +122,17 @@ header > .container > .nav  {
 
 
 @media screen and (max-width: 990px) {
-  header > .container > h1 {
-    font-size: 3rem;
-    
-  }
+  .container > h1 {
+    font-size: 2.6rem;
+   margin-left: 0;
+ }
+}
+
+@media screen and (max-width: 990px) {
+ header>.container>.cabecalho>ul>li>a {
+   font-size: 1.7rem;
+   letter-spacing: none;
+ }
 }
 
 
@@ -134,6 +141,7 @@ header .container {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 5%;
   
 }
 
@@ -147,7 +155,7 @@ header img {
 header h1 {
   font-size: 5rem;
   margin: 0.1em;
-  letter-spacing: 0rem;
+  letter-spacing: 0.1rem;
   color: var(--text-cabecalho);
   text-align: center;
   padding: 1.5rem;
@@ -155,7 +163,7 @@ header h1 {
 
 header .nav ul {
   display: flex;
-  padding: 5px;
+  
 }
 
 header .nav ul li {
@@ -166,7 +174,7 @@ header .nav ul li a {
   text-decoration: none;
   color: var(--text-cabecalho);
   text-transform: uppercase;
-  
+  font-size: 2.5rem;
   padding: 5px;
   transition: all 250ms linear 0s;
 }
@@ -514,7 +522,7 @@ main .saude-mental p {
   font-size: 2.3rem;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1190px) {
   #flex-apoio > .presente > .flex-container-presente > 
 .flex-item-presente > p {
     font-size: 2.1rem ;
@@ -527,7 +535,7 @@ main .saude-mental p {
   font-size: 4rem;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1190px) {
   #flex-apoio > .presente > .flex-container-presente > 
 .flex-item-presente > h2 {
     font-size: 3rem ;
@@ -535,9 +543,30 @@ main .saude-mental p {
   
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1190px) {
   #flex-apoio > .presente > .flex-container-presente {
-    margin-bottom: 5px;
+   
+    width: 400px;
+  }
+  
+}
+
+@media screen and (max-width: 1190px) {
+  #flex-apoio2 > .reduza >
+ .flex-container-reduza > .flex-item-reduza {
+   
+    width: 400px;
+    height: 191px;
+  }
+  
+}
+
+@media screen and (max-width: 1190px) {
+  #flex-apoio2 > .julgamento >
+ .flex-container-julgamento > .flex-item-julgamento {
+    
+    width: 400px;
+    
   }
   
 }
@@ -548,7 +577,7 @@ main .saude-mental p {
   
 } 
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1190px) {
   #flex-apoio > .reconhecer > 
 .flex-container-reconhecer > .flex-item-reconhecer > p {
   font-size: 2.1rem ;
@@ -561,7 +590,7 @@ main .saude-mental p {
   font-size: 4rem;
 } 
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1190px) {
   #flex-apoio > .reconhecer > 
 .flex-container-reconhecer > .flex-item-reconhecer > h2 {
   font-size: 3rem ;
@@ -569,10 +598,11 @@ main .saude-mental p {
   
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1190px) {
   #flex-apoio > .reconhecer > 
 .flex-container-reconhecer  {
-  margin-bottom: 5px;
+  
+  width: 400px;
   
 }
   
@@ -584,7 +614,7 @@ main .saude-mental p {
   
  }
 
- @media screen and (max-width: 990px) {
+ @media screen and (max-width: 1190px) {
   #flex-apoio2 > .julgamento
  > .flex-container-julgamento > .flex-item-julgamento > p {
   font-size: 2.1rem ;
@@ -597,7 +627,7 @@ main .saude-mental p {
   font-size: 4rem;
  }
 
- @media screen and (max-width: 990px) {
+ @media screen and (max-width: 1190px) {
   #flex-apoio2 > .julgamento
  > .flex-container-julgamento > .flex-item-julgamento > h2 {
   font-size: 3rem ;
@@ -610,7 +640,7 @@ main .saude-mental p {
   
  }
 
- @media screen and (max-width: 990px) {
+ @media screen and (max-width: 1190px) {
   #flex-apoio2 > .reduza >
  .flex-container-reduza > .flex-item-reduza > p {
   font-size: 2.1rem ;
@@ -622,12 +652,13 @@ main .saude-mental p {
   font-size: 4rem;
  }
 
- @media screen and (max-width: 990px) {
+ @media screen and (max-width: 1190px) {
   #flex-apoio2 > .reduza >
  .flex-container-reduza > .flex-item-reduza > h2 {
   font-size: 3rem ;
 }
 }
+
 
 main > .saude-mental {
   font-size: 5rem;
@@ -700,31 +731,46 @@ Flex
   flex-flow: row wrap;
 }
 
-@media screen and (max-width: 990px) {
-  .flex-container-chat{
+@media screen and (max-width: 1190px) {
+  .chat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 350px;
-    height: 230px;
-    margin-bottom: 1vw;
+    height: 200px;
+    margin-top: 4vh;
+    
+    
+    
 
   }
   
 }
 
-@media screen and (max-width: 990px) {
-  .flex-container-flor{
+@media screen and (max-width: 1190px) {
+  .flor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 350px;
-    height: 230px;
-    margin-bottom: 0vw;
+    height: 200px;
+    margin-top: 8vw;
+    
 
   }
   
 }
 
-@media screen and (max-width: 990px) {
-  .flex-container-ajuda{
+@media screen and (max-width: 1190px) {
+  .ajuda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 350px;
-    height: 230px;
-    margin-top: -1vw;
+    height: 200px;
+    margin-top: 8vw;
+    margin-bottom: 5vw;
+    
 
   }
   
@@ -797,7 +843,7 @@ Flex-apoio
 @media screen and (max-width: 1200px){
   #flex-apoio{
     margin-top: 5vw;
-    margin-bottom: 12vw;
+    margin-bottom: 1vw;
   }
 }
 
@@ -865,48 +911,19 @@ Flex-apoio
   padding: 0.5rem;
 }
 
-@media screen and (max-width: 990px) {
-  .flex-container-presente{
-    width: 320px;
-    height: 160px;
-    margin-bottom: -6vw;
-  }
+@media screen and (max-width: 1190px) {
+  .flex-container-presente,
+.flex-container-reconhecer,
+.flex-container-julgamento,
+.flex-container-reduza {
+  width: 40rem;
+  margin: 20px;
+
+}
+  
 }
 
-@media screen and (max-width: 990px) {
-  .flex-container-reconhecer{
-    width: 320px;
-    height: 160px;
-    margin-bottom: -4vh;
-    font-size: 6rem;
-    
-  }
-}
 
-@media screen and (max-width: 990px) {
-  .flex-item-reconhecer > h2{
-    font-size: 6rem;
-    
-    
-  }
-}
-
-@media screen and (max-width: 990px) {
-  .flex-container-julgamento{
-    width: 320px;
-    height: 160px;
-    margin-bottom: 8vh;
-    
-  }
-}
-
-@media screen and (max-width: 990px) {
-  .flex-container-reduza{ 
-    width: 320px;
-    height: 180px;
-    margin-bottom: 8vh;
-  }
-}
 
 .flex-item-presente,
 .flex-item-reconhecer,

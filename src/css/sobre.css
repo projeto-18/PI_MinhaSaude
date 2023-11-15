@@ -82,17 +82,24 @@ header>.container>.cabecalho>ul>li>a {
 }
 
 @media screen and (max-width: 990px) {
-  header>.container>h1 {
-    font-size: 2rem;
-    margin-left: 0vw;
-  }
+  .container > h1 {
+   font-size: 2.6rem;
+   margin-left: 0;
+ }
+}
+
+@media screen and (max-width: 990px) {
+ header>.container>.cabecalho>ul>li>a {
+   font-size: 1.7rem;
+   letter-spacing: none;
+ }
 }
 
 @media screen and (max-width: 990px) {
   header > .container  a {
     font-size: 1.8rem;
     letter-spacing: none;
-    padding: 1rem;
+    padding: 5px;
   }
 }
 
@@ -129,7 +136,7 @@ header nav ul li a {
   text-decoration: none;
   color: var(--text-cabecalho);
   text-transform: uppercase;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   padding: 5px;
   transition: all 250ms linear 0s;
 }
