@@ -116,6 +116,16 @@ header .nav ul li a {
   }
 }
 
+@media screen and (max-width: 590px) {
+  header .nav ul li a   {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+  }
+}
+
 @media screen and (max-width: 500px) {
   header > .container   {
     display: flex;
@@ -129,6 +139,13 @@ header .nav ul li a {
 @media screen and (max-width: 990px) {
   .container > h1 {
     font-size: 2.6rem;
+   margin-left: 0;
+ }
+}
+
+@media screen and (max-width: 590px) {
+  .container > h1 {
+   font-size: 1.5rem;
    margin-left: 0;
  }
 }
@@ -148,6 +165,14 @@ header .container {
 header img {
   width: 45px;
   padding: 15px 0;
+}
+
+@media screen and (max-width: 590px) {
+  header img {
+    width: 35px;
+  padding: 10px 0;
+   
+ }
 }
 
 
@@ -255,7 +280,7 @@ Intensidade
   flex-direction: column;
   display: flex;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1190px) {
   .humor{
     margin-top: 2vh;
     justify-content: center;
@@ -263,6 +288,16 @@ Intensidade
     display: flex;
   }
    }
+
+   @media screen and (max-width: 590px) {
+    .humor{
+      margin-top: 2vh;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      width: 400px;
+    }
+     }
 
 #question {
   font-size: 2.5rem;
@@ -337,7 +372,7 @@ Mensagens
   height: 24rem;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1190px) {
   #mensage {
     text-align: center;
     background-color: var(--bg-menu);
@@ -349,6 +384,19 @@ Mensagens
     margin-left: 21vh;
   }
    }
+
+   @media screen and (max-width: 590px) {
+    #mensage {
+      text-align: center;
+      background-color: var(--bg-menu);
+      border: 5px solid white;
+      padding: 1rem 1rem;
+      border-radius: 5%;
+      margin-top: 8vh;
+      margin-bottom: -2vh;
+      margin-left: 12vh;
+    }
+     }
 
 
 
@@ -394,6 +442,8 @@ main > h2 {
     
   }
 }
+
+
  /*estilo abaixo de dicas para cuidar ... */
 
  main > #flex > .chat > .flex-container-chat >
@@ -510,6 +560,13 @@ main .saude-mental p {
   margin-bottom: 2vw;
 }
 
+@media screen and (max-width: 590px) {
+  .saude-mental2 > h2 {
+    font-size: 2.1rem ;
+  }
+  
+}
+
 #flex-apoio > .presente > .flex-container-presente > 
 .flex-item-presente > p {
   font-size: 2.3rem;
@@ -519,6 +576,14 @@ main .saude-mental p {
   #flex-apoio > .presente > .flex-container-presente > 
 .flex-item-presente > p {
     font-size: 2.1rem ;
+  }
+  
+}
+
+@media screen and (max-width: 590px) {
+  #flex-apoio > .presente > .flex-container-presente > 
+.flex-item-presente > p {
+    font-size: 1.8rem ;
   }
   
 }
@@ -536,10 +601,26 @@ main .saude-mental p {
   
 }
 
+@media screen and (max-width: 590px) {
+  #flex-apoio > .presente > .flex-container-presente > 
+.flex-item-presente > h2 {
+    font-size: 2rem ;
+  }
+  
+}
+
 @media screen and (max-width: 1190px) {
   #flex-apoio > .presente > .flex-container-presente {
    
     width: 400px;
+  }
+  
+}
+
+@media screen and (max-width: 590px) {
+  #flex-apoio > .presente > .flex-container-presente {
+   
+    width: 250px;
   }
   
 }
@@ -549,6 +630,16 @@ main .saude-mental p {
  .flex-container-reduza > .flex-item-reduza {
    
     width: 400px;
+    height: 191px;
+  }
+  
+}
+
+@media screen and (max-width: 590px) {
+  #flex-apoio2 > .reduza >
+ .flex-container-reduza > .flex-item-reduza {
+   
+    width: 250px;
     height: 191px;
   }
   
