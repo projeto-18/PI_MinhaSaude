@@ -95,15 +95,20 @@ header > .container > .nav  {
   font-size: 2rem;
 }
 
-@media screen and (max-width: 990px) {
-  header > .nav   {
-    font-size: 1rem;
-  }
+
+
+header .nav ul li a {
+  text-decoration: none;
+  color: var(--text-cabecalho);
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  padding: 5px;
+  transition: all 250ms linear 0s;
 }
 
 @media screen and (max-width: 990px) {
-  header > .container > .nav > a   {
-    font-size: 1.8rem;
+  header .nav ul li a   {
+    font-size: 1.7rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -128,12 +133,7 @@ header > .container > .nav  {
  }
 }
 
-@media screen and (max-width: 990px) {
- header>.container>.cabecalho>ul>li>a {
-   font-size: 1.7rem;
-   letter-spacing: none;
- }
-}
+
 
 
 
@@ -170,14 +170,7 @@ header .nav ul li {
   list-style: none;
 }
 
-header .nav ul li a {
-  text-decoration: none;
-  color: var(--text-cabecalho);
-  text-transform: uppercase;
-  font-size: 2.5rem;
-  padding: 5px;
-  transition: all 250ms linear 0s;
-}
+
 
 header .nav ul li a:hover {
   background: rgba(255, 255, 255, 0.15);
