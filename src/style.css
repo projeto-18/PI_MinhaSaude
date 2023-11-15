@@ -97,6 +97,8 @@ header > .container > .nav  {
 
 
 
+
+
 header .nav ul li a {
   text-decoration: none;
   color: var(--text-cabecalho);
@@ -126,10 +128,10 @@ header .nav ul li a {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 590px) {
   header > .container   {
     display: flex;
-    margin-right: -55vw;
+    margin-left: -15%;
     
   }
 }
