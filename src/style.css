@@ -120,7 +120,7 @@ header .nav ul li a {
 
 @media screen and (max-width: 590px) {
   header .nav ul li a   {
-    font-size: 1rem;
+    font-size: 1.4rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -147,7 +147,7 @@ header .nav ul li a {
 
 @media screen and (max-width: 590px) {
   .container > h1 {
-   font-size: 1.5rem;
+   font-size: 1.8rem;
    margin-left: 0;
  }
 }
@@ -293,11 +293,11 @@ Intensidade
 
    @media screen and (max-width: 590px) {
     .humor{
-      margin-top: 2vh;
+      margin-top: 3vh;
       justify-content: center;
       align-items: center;
       display: flex;
-      width: 400px;
+      width: 350px;
     }
      }
 
@@ -309,6 +309,16 @@ Intensidade
   padding: 1.5rem;
 }
 
+@media screen and (max-width: 590px) {
+  #question{
+    font-size: 1.8rem;
+  text-align: center;
+  justify-content: center;
+  color: var(--text-login);
+  padding: 1.5rem;
+  }
+   }
+
 .intensity-slider {
   text-align: center;
   background-color: white;
@@ -318,6 +328,20 @@ Intensidade
   max-width: 400px;
   margin: 0px auto 0px;
 }
+
+@media screen and (max-width: 590px) {
+  .intensity-slider{
+    text-align: center;
+  background-color: white;
+  border: 5px solid var(--bg-menu);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  max-width: 300px;
+  margin: 0px auto 0px;
+  }
+   }
+
+
 
 /*=============== 
 Estilos para o slider
