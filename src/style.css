@@ -765,7 +765,7 @@ main .saude-mental p {
 .flex-container-reconhecer  {
   
   width: 250px;
-  height: 200px;
+  height: 185px;
   
 }
   
@@ -786,16 +786,38 @@ main .saude-mental p {
   
 }
 
+@media screen and (max-width: 590px) {
+  #flex-apoio2 > .julgamento
+ > .flex-container-julgamento > .flex-item-julgamento > p {
+  font-size: 1.8rem ;
+}
+  
+}
+
+
  #flex-apoio2 > .julgamento
  > .flex-container-julgamento > .flex-item-julgamento > h2 {
   font-size: 4rem;
  }
 
- @media screen and (max-width: 1190px) {
+ 
+
+@media screen and (max-width: 590px) {
   #flex-apoio2 > .julgamento
  > .flex-container-julgamento > .flex-item-julgamento > h2 {
-  font-size: 3rem ;
+  font-size: 1.8rem ;
 }
+}
+
+@media screen and (max-width: 590px) {
+  #flex-apoio2 > .julgamento
+  > .flex-container-julgamento  {
+  
+  width: 250px;
+  height: 185px;
+  
+}
+  
 }
 
 #flex-apoio2 > .reduza >
@@ -822,6 +844,34 @@ main .saude-mental p {
   font-size: 3rem ;
 }
 }
+
+@media screen and (max-width: 590px) {
+  #flex-apoio2 > .reduza >
+ .flex-container-reduza > .flex-item-reduza > h2 {
+  font-size: 2rem ;
+}
+}
+
+@media screen and (max-width: 590px) {
+  #flex-apoio2 > .reduza >
+ .flex-container-reduza > .flex-item-reduza > p {
+  font-size: 1.8rem ;
+}
+}
+
+@media screen and (max-width: 590px) {
+  #flex-apoio2 > .reduza >
+  .flex-container-reduza  {
+  
+  width: 250px;
+  height: 185px;
+  
+}
+  
+}
+
+
+
 
 
 main > .saude-mental {
@@ -1037,7 +1087,7 @@ Flex-apoio
   #flex-apoio{
     margin-top: 5vw;
     margin-bottom: 1vw;
-    gap: 155px;
+    gap: 28vw;
     align-items: baseline;
     display: flex;
     justify-content: center;
@@ -1071,6 +1121,20 @@ Flex-apoio
   }
 }
 
+@media screen and (max-width: 590px){
+  #flex-apoio2{
+    margin-top: 2vw;
+    margin-bottom: 15vw;
+    gap: 3vw;
+    align-items: baseline;
+    display: flex;
+    justify-content: center;
+    
+    
+  }
+}
+
+
 .presente h2,
 .reconhecer h2,
 .julgamento h2,
@@ -1099,8 +1163,7 @@ Flex-apoio
 .flex-container-reconhecer,
 .flex-container-julgamento,
 .flex-container-reduza {
-  width: 60rem;
-  height: 20rem;
+  
   position: relative;
   list-style: none;
   display: -webkit-box;
@@ -1113,17 +1176,7 @@ Flex-apoio
   padding: 0.5rem;
 }
 
-@media screen and (max-width: 1190px) {
-  .flex-container-presente,
-.flex-container-reconhecer,
-.flex-container-julgamento,
-.flex-container-reduza {
-  width: 40rem;
-  margin: 20px;
 
-}
-  
-}
 
 
 
@@ -1169,13 +1222,14 @@ Flex-apoio
   align-items: center;
 }
 
+
 .flex-item-reduza {
   background-image: var(--bg-flex-img-reduza);
   background-position: 5% 3%;
   background-repeat: no-repeat;
   display: block;
   align-items: center;
-  height: 200px;
+  height: 170px;
 }
 
 /*=============== 
