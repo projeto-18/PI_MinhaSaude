@@ -828,7 +828,7 @@ Flex
     display: -webkit-flex;
     -webkit-flex-flow: row;
     flex-flow: row;
-    gap: 4 rem;
+    gap: 4rem;
     align-items: center;
     justify-content: center;
     margin: 0px;
