@@ -1264,17 +1264,15 @@ Flex compartilhe
   margin: 60px auto 30px;
 }
 
-@media screen and(max-width: 590px) {
+@media screen and (max-width: 590px) {
   .compartilhe h2 {
     font-family: var(--text-family);
-    font-size: 1rem;
-    font: bold;
+    font-size: 2.8rem;
+    font-weight: bold; /* Corrigindo a propriedade font para font-weight */
     font-style: italic;
-    color: #007bff;
     color: var(--text-login);
     margin: 60px auto 30px;
   }
-  
 }
 
 .compartilhe p {
@@ -1286,17 +1284,25 @@ Flex compartilhe
   margin: -30px auto 0px;
 }
 
-@media screen and(max-width: 590px) {
+@media screen and (max-width: 590px) {
   .compartilhe p {
-    font-family: var(--text-family);
-    font-size: 1rem;
-    font: bold;
-    font-style: italic;
-    color: var(--text-login);
-    margin: 60px auto 30px;
-  }
-  
+    font-size: 1.8rem;
+    
 }
+}
+
+@media screen and (max-width: 590px) {
+  .compartilhe  {
+    width: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+}
+
+
 
 .flex-container-compartilhe {
   width: 60rem;
