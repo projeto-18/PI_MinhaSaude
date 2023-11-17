@@ -671,7 +671,7 @@ main .saude-mental p {
 
 @media screen and (max-width: 590px) {
   #flex-apoio > .presente > .flex-container-presente {
-    margin-left: -25vh;
+    margin-left: 25vh;
     width: 250px;
   }
   
@@ -1125,9 +1125,9 @@ Flex-apoio
 
 @media screen and (max-width: 590px){
   #flex-apoio2{
-    margin-top: 1rem;
-    margin-bottom: 8vw;
-    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 18vw;
+    gap: 3rem;
     
     display: flex;
     
