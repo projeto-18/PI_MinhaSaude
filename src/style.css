@@ -470,6 +470,13 @@ main > h2 {
 }
 
 
+@media screen and (max-width: 590px) {
+  main > .saude-mental > h2{
+    font-size:  4rem;
+    
+  }
+}
+
  /*estilo abaixo de dicas para cuidar ... */
 
  main > #flex > .chat > .flex-container-chat >
@@ -790,6 +797,8 @@ Cabeçalho de ambos Flex
   font-size: 5rem;
   padding: 1.5rem;
 }
+
+
 
 /*=============== 
 Flex
