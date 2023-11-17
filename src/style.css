@@ -671,7 +671,7 @@ main .saude-mental p {
 
 @media screen and (max-width: 590px) {
   #flex-apoio > .presente > .flex-container-presente {
-   
+    margin-left: -25vh;
     width: 250px;
   }
   
@@ -856,6 +856,7 @@ main .saude-mental p {
   #flex-apoio2 > .reduza >
  .flex-container-reduza > .flex-item-reduza > p {
   font-size: 1.8rem ;
+  
 }
 }
 
@@ -864,7 +865,7 @@ main .saude-mental p {
   .flex-container-reduza  {
   
   width: 250px;
-  height: 185px;
+  height: 190px;
   
 }
   
@@ -1071,7 +1072,7 @@ Flex-apoio
   flex-flow: row;
   gap: 2rem;
   align-items: center;
-  justify-content: center;
+  justify-content: baseline;
   margin: 0px;
 }
 
@@ -1087,10 +1088,11 @@ Flex-apoio
   #flex-apoio{
     margin-top: 5vw;
     margin-bottom: 1vw;
-    gap: 28vw;
-    align-items: baseline;
+    gap: 1vw;
+    
     display: flex;
-    justify-content: center;
+    
+    flex-direction: column;
     
     
   }
@@ -1111,7 +1113,7 @@ Flex-apoio
   flex-flow: row;
   gap: 2rem;
   align-items: center;
-  justify-content: center;
+  justify-content: baseline;
   margin-bottom: 10vw;
 }
 
@@ -1123,12 +1125,13 @@ Flex-apoio
 
 @media screen and (max-width: 590px){
   #flex-apoio2{
-    margin-top: 2vw;
-    margin-bottom: 15vw;
-    gap: 3vw;
-    align-items: baseline;
+    margin-top: 1rem;
+    margin-bottom: 8vw;
+    gap: 2rem;
+    
     display: flex;
-    justify-content: center;
+    
+    flex-direction: column;
     
     
   }
@@ -1202,7 +1205,7 @@ Flex-apoio
   background-image: var(--bg-flex-img-presente);
   background-position: 5% 3%;
   background-repeat: no-repeat;
-  display: block;
+  justify-content: baseline;
   align-items: center;
 }
 
