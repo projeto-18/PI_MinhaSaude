@@ -828,7 +828,7 @@ Flex
     display: -webkit-flex;
     -webkit-flex-flow: row;
     flex-flow: row;
-    gap: 4rem;
+    gap: 8rem;
     align-items: center;
     justify-content: center;
     margin: 0px;
@@ -897,6 +897,20 @@ Flex
     width: 350px;
     height: 200px;
     margin-top: 8vw;
+    
+
+  }
+  
+}
+
+@media screen and (max-width: 590px) {
+  .flor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 200px;
+    margin-bottom: 3vw;
     
 
   }
