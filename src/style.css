@@ -530,6 +530,12 @@ p {
     }
   }
 
+  @media screen and (max-width: 590px) {
+    main > #flex > .flor >  {
+      font-size: 3rem;
+    }
+  }
+
 
 main > #flex > .ajuda > .flex-container-ajuda > .flex-item-ajuda
 > p {
@@ -801,6 +807,23 @@ Flex
   align-items: center;
   justify-content: center;
   margin: 0px;
+}
+
+@media screen and (max-width: 590px) {
+  #flex {
+    display: flex;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-flex-flow: row;
+    flex-flow: row;
+    gap: 4 rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+  }
 }
 
 .chat h2,
