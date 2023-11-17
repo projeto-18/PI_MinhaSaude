@@ -818,7 +818,7 @@ Flex
   margin: 0px;
 }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 590px) {
   #flex {
     display: flex;
     list-style: none;
