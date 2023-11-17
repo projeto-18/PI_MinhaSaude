@@ -818,7 +818,7 @@ Flex
   margin: 0px;
 }
 
-@media screen and (max-width: 590px) {
+@media screen and (max-width: 690px) {
   #flex {
     display: flex;
     list-style: none;
@@ -828,7 +828,7 @@ Flex
     display: -webkit-flex;
     -webkit-flex-flow: row;
     flex-flow: row;
-    gap: 8rem;
+    gap: 5rem;
     align-items: center;
     justify-content: center;
     margin: 0px;
