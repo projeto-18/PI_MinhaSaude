@@ -671,7 +671,7 @@ main .saude-mental p {
 
 @media screen and (max-width: 590px) {
   #flex-apoio > .presente > .flex-container-presente {
-    margin-left: 25vh;
+    margin-left: -25vh;
     width: 250px;
   }
   
@@ -1250,8 +1250,10 @@ Flex compartilhe
   gap: 2rem;
   align-items: center;
   justify-content: center;
-  margin-top: -5vh;
+  margin-top: 5vh;
 }
+
+
 
 .compartilhe h2 {
   font-family: var(--text-family);
@@ -1262,13 +1264,38 @@ Flex compartilhe
   margin: 60px auto 30px;
 }
 
+@media screen and(max-width: 590px) {
+  .compartilhe h2 {
+    font-family: var(--text-family);
+    font-size: 1rem;
+    font: bold;
+    font-style: italic;
+    color: #007bff;
+    color: var(--text-login);
+    margin: 60px auto 30px;
+  }
+  
+}
+
 .compartilhe p {
   font-family: var(--text-family);
-  font-size: 3rem;
+  font-size: rem;
   color: var(--hero-p);
   /* color: var(--text-login); */
   font-style: italic;
   margin: -30px auto 0px;
+}
+
+@media screen and(max-width: 590px) {
+  .compartilhe p {
+    font-family: var(--text-family);
+    font-size: 1rem;
+    font: bold;
+    font-style: italic;
+    color: var(--text-login);
+    margin: 60px auto 30px;
+  }
+  
 }
 
 .flex-container-compartilhe {
