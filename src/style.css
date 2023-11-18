@@ -631,7 +631,7 @@ main .saude-mental p {
 
 @media screen and (max-width: 590px) {
   #flex-apoio > .presente > .flex-container-presente  {
-    margin-right: -25vw ;
+   
     width: 180px;
   }
   
