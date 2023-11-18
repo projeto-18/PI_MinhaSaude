@@ -671,7 +671,9 @@ main .saude-mental p {
 
 @media screen and (max-width: 590px) {
   #flex-apoio > .presente > .flex-container-presente {
-    margin-left: -25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 250px;
   }
   
@@ -1213,7 +1215,7 @@ Flex-apoio
   background-image: var(--bg-flex-img-identifique);
   background-position: 5% 3%;
   background-repeat: no-repeat;
-  display: block;
+  
   align-items: center;
 }
 
@@ -1221,7 +1223,7 @@ Flex-apoio
   background-image: var(--bg-flex-img-evite);
   background-position: 5% 3%;
   background-repeat: no-repeat;
-  display: block;
+ 
   align-items: center;
 }
 
@@ -1230,7 +1232,7 @@ Flex-apoio
   background-image: var(--bg-flex-img-reduza);
   background-position: 5% 3%;
   background-repeat: no-repeat;
-  display: block;
+  
   align-items: center;
   height: 170px;
 }
