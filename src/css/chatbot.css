@@ -101,10 +101,12 @@ header h1 {
 
 @media screen and (max-width: 590px) {
   .container > h1 {
-   font-size: 1.5rem;
+   font-size: 2rem;
    margin-left: 0;
  }
 }
+
+
 
 
 
@@ -125,7 +127,7 @@ header nav ul li a {
 
  @media screen and (max-width: 590px) {
   header nav ul li a {
-    font-size: 1rem;
+    font-size: 1.4rem;
     letter-spacing: none;
   }
  }
@@ -137,9 +139,25 @@ header .container {
   margin-left: 5%;
 }
 
+@media screen and (max-width: 590px) {
+  header  .container   {
+    display: flex;
+    
+    
+  }
+}
+
 header img {
   width: 45px;
   padding: 15px 0;
+}
+
+@media screen and (max-width: 590px) {
+  header img {
+    width: 35px;
+  padding: 10px 0;
+   
+ }
 }
 
 

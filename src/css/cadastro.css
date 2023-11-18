@@ -87,12 +87,28 @@ header>.container>.cabecalho>ul>li>a {
       margin-left: 0vw;
     }
   }
+
+  
+@media screen and (max-width: 590px) {
+    .container > h1 {
+        font-size: 2rem;
+      margin-left: 0vw;
+    }
+  }
   
   @media screen and (max-width: 990px) {
     header > .container  a {
-      font-size: 1.8rem;
+      font-size: 1.7rem;
       letter-spacing: none;
       padding: 5px;
+    }
+  }
+
+  @media screen and (max-width: 590px) {
+    header > .container  a {
+      font-size: 1.4rem;
+      letter-spacing: none;
+    
     }
   }
 
@@ -103,10 +119,26 @@ header .container {
     margin-left: 5%;
 }
 
+@media screen and (max-width: 590px) {
+  header > .container   {
+    display: flex;
+    
+    
+  }
+}
+
 header img {
     width: 45px;
     padding: 15px 0;
 }
+
+@media screen and (max-width: 590px) {
+    header img {
+      width: 35px;
+    padding: 10px 0;
+     
+   }
+  }
 
 header h1 {
     font-size: 5rem;
@@ -221,12 +253,45 @@ main {
     
 }
 
+@media screen and (max-width: 590px) {
+    .formulario-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background: var(--bg-menu); 
+        border: 1px solid #cccccc;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.541);
+        border-radius: 10px;
+      
+      
+        color: var(--surface-menu-houver);
+        width: 450px;
+        margin-top: 8vh;
+        font-size: 1.3rem;
+
+        
+    }
+  }
+
+  
+
+ 
+
 h2{
     display: flex;
     justify-content: center;
     font-size: 4rem;
     color: var(--text-login);
+    margin-top: 12vh;
 }
+
+@media screen and (max-width: 590px) {
+    h2{
+      font-size: 3rem;
+      letter-spacing: none;
+      padding: 5px;
+    }
+  }
 
 
 
@@ -247,6 +312,25 @@ h2{
 }
 
 
+@media screen and (max-width: 590px) {
+    #botao {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 15pt;
+        height: 50px;
+        width: 400px;
+        cursor: pointer;
+        background-color: var(--bg-menu);
+        color: var(--text-white);
+        border-radius: 20px;
+        transition: 0.3s;
+        margin: auto;
+    }
+    
+  }
+
 
 #n1 {
     font-size: 1.5em;
@@ -258,6 +342,15 @@ h2{
     border: none;
     text-indent: 5px;
 }
+
+@media screen and (max-width: 590px) {
+    #n1 {
+        width: 200px;
+        
+
+        
+    }
+  }
 
 #n2 {
     font-size: 1.5em;
@@ -280,6 +373,15 @@ h2{
     border: none;
     text-indent: 5px;
 }
+
+@media screen and (max-width: 590px) {
+    #n3 {
+        width: 300px;
+        
+
+        
+    }
+  }
 
 #parente {
     width: 120px;
