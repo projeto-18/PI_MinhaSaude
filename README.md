@@ -20,7 +20,7 @@ O frontend é a parte do aplicativo com a qual os usuários interagem. Para um M
 ## Páginas e Componentes:
 1.	A partir do Index.html teremos acessos as páginas auxiliares, através do Menu na parte superior e os atalhos localizados na parte inferior, conforme descrito abaixo:
     ### MENU SUPERIOR
-    a. CHATBOT
+    #### a. CHATBOT
 Tela destinada para que os usuários tirem suas dúvidas através das opções fornecidas pela página.
 
      b. SOBRE
